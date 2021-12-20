@@ -1,2 +1,2 @@
 # book-shop
-html - css - php - bootstrap
+html - css - javascript - bootstrap - php
