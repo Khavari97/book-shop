@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="Products.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!--------Header-------------------------------------------------------------------------------------------------------->
+
+<header>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-3 ">
+                <!---- Avatar-------->
+
+                <button href="Profile.html" class="avatar" onclick="goProfile()"><img src="Assets/IconAvatar.png"
+                                                          style="width: 28% ; height: auto ;"></button>
+
+            </div>
+
+            <div class="col-sm-6 ">
+                <!------- Search Documents --------->
+                <form action="" class="search">
+                    <input type="text" placeholder="جستجو" name="search" id="search">
+                    <button type="button" onclick="searchButton()"><img class="IconSearch" src="Assets/IconSearch.png"></button>
+
+                </form>
+                <!-- result -->
+                <div class="result">
+                <div>تعداد موارد پیداشده : <span class="result-number" id="search-number"></span> مورد</div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-3 ">
+                <!------ Logo -------->
+                <div class="navbar-header navbar-right" onclick="goMainPage()">
+                    <div class="university">دانشگاه خوارزمی</div>
+                    <p class="navbar-brand "><span><img class="logo" src="Assets/Logo.png">
+                        <img class="menu-picture" onclick="openNav()" src="Assets/IconMobileAdvanceSearch.png">
+                    </span><span class="University">دانشگاه خوارزمی</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-------------------------------products ------------------------------------------------------------------------------>
+<div class="container-fluid">
+    <div class="row">
+
+
+        <div class="col-sm-9 Documents">
+            <div class="container-fluid">
+                <div class="row" id="products" style="direction: rtl;">
+
+
+                </div>
+                <!-------------------------------------------------------------------------------->
+
+            </div>
+        </div>
+    </div>
+    <!------------------------- Choose type of Documents ------------------------------------------------------------>
+
+    <div class="col-sm-3 menu">
+        <div id="mySideNav" class="sideNav">
+            <div class="closeBtn" onclick="closeNav()">
+                <img class="close-btn" src="Assets/IconMobileClose.png"><p class="title">فیلترکردن</p>
+            </div>
+            <img class="filter" src="Assets/IconMobileFilter.png">
+            <div class="menu-document">
+
+                <div class="main">
+                    <form name="filter">
+                        <label class="rad">
+                            <input type="radio" name="product" value="note">
+                            <i></i> جزوه
+                        </label>
+                        <br>
+                        <label class="rad">
+                            <input type="radio" name="product" value="reference">
+                            <i></i> منبع
+                        </label>
+                        <br>
+                        <label class="rad">
+                            <input type="radio" name="product" value="book">
+                            <i></i> کتاب دست دوم
+                        </label>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!------->
+
+
+    </div>
+
+</div>
+
+<!-------- Modal for Unsuccessful Message ------------->
+<div id="modal_UnSuccessfulMessage" class="modal modal_UnSeccessfulMessage animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_UnSuccessfulMessage')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="modal-body Modal">
+                <!--- picture --->
+                <div class="Unseccessful">
+                    <img class="unseccessful" src="Assets/UnsuccessfulIcon@2x.png">
+                </div>
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+            <div class="problem" id="unsuccessful_msg"></div>
+        </div>
+    </div>
+</div>
+
+<!-------- Modal for Successful Message ------------->
+<div id="modal_SuccessfulMessage" class="modal modal_SeccessfulMessage animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_SuccessfulMessage')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <!--- picture --->
+                <div class="Seccessful">
+                    <img  class="seccessful" src="Assets/SuccessfulIcon@2x.png">
+                </div>
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+            <div class="problem" id="successful_msg"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script>
+    function goMainPage() {
+        window.location.assign('IntroductionPage.html');
+    }
+</script>
+<script src="js/const.js"></script>
+<script src="js/showCloseModal.js"></script>
+<script>
+    function goProfile() {
+        window.location.assign('Profile.html');
+    }
+
+    function openNav() {
+        document.getElementById("mySideNav").style.width = "60vw";
+    }
+
+    function closeNav() {
+        document.getElementById("mySideNav").style.width = "0";
+    }
+</script>
+<script src="js/searchProducts.js"></script>
+
+</body>
+</html>

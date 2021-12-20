@@ -1,0 +1,634 @@
+container-fluid {
+    padding: 1.5vw 2.6vw;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 1.5vw;
+    color: #FF9200;
+}
+
+.navbar-header .navbar-brand span {
+    margin-left: 1vw;
+}
+
+.navbar-header .navbar-brand {
+    margin-top: 0vw;
+}
+.navbar-right {
+    margin-right: -30px;
+}
+
+header {
+    margin-top: 1vw;
+}
+
+.university {
+    display: none;
+}
+
+.search {
+    margin-top: 0.7vw;
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.menu-picture {
+    display: none;
+}
+
+.IconSearch {
+    width: 2vw;
+    height: auto;
+}
+
+.search input[type=text] {
+    float: right;
+    width: 80%;
+    height: auto;
+    padding: 0.7vw 1vw;
+    margin-top: 0.1vw;
+    border: 0;
+    border-top-right-radius: 4.5vw;
+    border-bottom-right-radius: 4.5vw;
+    font-family: sahel;
+    font-size: 1.1vw;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.search button {
+    float: right;
+    width: 15%;
+    height: auto;
+    padding: 0.5vw 0vw;
+    margin-top: 0.1vw;
+    font-size: 1.1vw;
+    font-family: sahel;
+    border: 0;
+    border-top-left-radius: 4.5vw;
+    border-bottom-left-radius: 4.5vw;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FC4A1A, #FF9200);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    color: #707070;
+}
+
+.search button:hover, .search button:focus {
+    border: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FF9200, #FC4A1A);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.avatar {
+    width: 70%;
+    height: 6vw;
+    background-color: #E3E3E3;
+    border: 0;
+    position: relative;
+    right: 10vw;
+    top: -0.5vw;
+
+}
+
+.sideNav {
+    width: 25%;
+    height: auto;
+}
+
+.sideNav .closeBtn {
+    display: none;
+}
+
+header {
+    border-bottom: solid 1px #707070;
+    margin: 1vw 2vw;
+    padding: 1vw 1vw;
+    width: 96%;
+    height: 9.5vw;
+}
+
+.menu {
+    position: absolute;
+    top: 10.5vw;
+    right: 1vw;
+    border-left: solid 1px #707070;
+    height: 100%;
+}
+
+.Row {
+    margin-top: 1vw;
+}
+
+.Documents {
+
+    position: absolute;
+    left: 1vw;
+    top: 8.5vw;
+    padding-top: 2.1vw;
+}
+
+.product {
+    border: 0;
+    border-radius: 1vw;
+    padding-left: 0;
+    width: 33%;
+    float: right;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    padding-top: 1vw;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.book, .resource {
+    width: 80%;
+    height: auto;
+}
+
+.picture {
+    background-color: #FF9200;
+    border: 0;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    float: left;
+    width: 40%;
+    height: 10vw;
+    padding: 1.2vw 0.5vw;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.picture_note {
+    border: 0;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    width: 8.2vw;
+    height: 9.4vw;
+    position: relative;
+    left: 0.3vw;
+    bottom: 0.9vw;
+    padding: 0.1vw 0.1vw;
+}
+
+.sentence {
+    width: 60%;
+    height: 10vw;
+    background-color: #FFFFFF;
+    font-family: sahel;
+    font-size: 1vw;
+    padding: 1.5vw 1vw;
+    color: #707070;
+    border: 0;
+    overflow-wrap: anywhere;
+    float: left;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.row {
+    margin: 0;
+}
+
+.star {
+    width: 13%;
+    height: auto;
+    float: right;
+}
+
+.result {
+    font-family: sahel;
+    font-size: 1.2vw;
+    color: #707070;
+    position: relative;
+    top: 1.5vw;
+    right: 9vw;
+
+}
+
+.result-number {
+    padding:0 2vw ;
+}
+
+.position-star {
+    position: relative;
+    bottom: -3.5vw;
+    left: -3vw
+}
+
+.menu-document {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 100%;
+}
+
+.filter {
+    display: none;
+}
+.main {
+    position: relative;
+    top: 1vw;
+    width: 100%;
+}
+
+.rad {
+    cursor: pointer;
+    user-select: none;
+    font-family: sahel;
+    font-weight: 100;
+    color: #707070;
+    font-size: 1.2vw;
+    padding: 0.3vw 1vw;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.rad > input,
+.ckb > input { /* HIDE ORG RADIO & CHECKBOX */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* RADIO & CHECKBOX STYLES */
+/* DEFAULT <i> STYLE */
+.rad > i, .ckb > i {
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: inset 0 0 0 8px #fff;
+    padding: 0;
+    margin-left: 1vw;
+
+}
+
+/* CHECKBOX OVERWRITE STYLES */
+.ckb > i {
+    width: 10%;
+    border-radius: 3px;
+}
+
+.rad:hover > i { /* HOVER <i> STYLE */
+    box-shadow: inset 0 0 0 3px #fff;
+    background: white;
+}
+
+.rad > input:checked + i { /* (RADIO CHECKED) <i> STYLE */
+    box-shadow: inset 0 0 0 3px #fff;
+    content: url("Assets/symbol-yellow-orange-clear-tick-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-align-content: center;
+    background-size: 100%;
+    height: auto;
+}
+
+
+/* CHECKBOX */
+.ckb > input + i:after {
+    display: block;
+    height: 1vw;
+    width: 1vw;
+    margin: 1vw;
+    border-radius: inherit;
+    transition: inherit;
+    background: #707070;
+}
+
+.ckb > input:checked + i:after { /* (RADIO CHECKED) <i> STYLE */
+    margin-left: 2vw;
+    content: url("Assets/symbol-yellow-orange-clear-tick-thumbnail.jpg");
+    -webkit-align-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+
+}
+
+
+/******* for mobile ***************/
+@media screen and (max-width: 767px) {
+
+    header {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-picture {
+        display: block;
+        position: absolute;
+        top: 5.5vw;
+        right: 8vw;
+        width: 9.2vw;
+        height: 6.2vw;
+
+    }
+
+    .University {
+        display: none;
+    }
+
+    .university {
+        display: inline-block;
+        position: absolute;
+        top: 4.5vw;
+        right: 24vw;
+        color: #FFFFFF;
+        font-size: 5.7vw;
+    }
+
+
+    .navbar-header {
+        background-color: #FF9200;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 17vw;
+        margin: 0;
+        padding: 0;
+        z-index: 10000;
+
+    }
+
+    .search {
+        position: absolute;
+        padding: 0;
+        top: 22vw;
+        right: 7vw;
+        width: 90%;
+    }
+
+    .search input[type=text] {
+        width: 80%;
+        height: 10vw;
+        padding: 0.7vw 3vw;
+        font-family: sahel;
+        font-size: 3vw;
+
+    }
+
+    .search button {
+        width: 20%;
+        height: 10vw;
+        padding: 0.5vw 0vw;
+        margin-top: 0.1vw;
+
+    }
+
+    .IconSearch {
+        width: 5vw;
+        height: auto;
+    }
+
+    .Documents {
+        border: 0;
+        position: absolute;
+        top: 49vw;
+        padding: 0;
+
+    }
+
+    .result {
+        right: 0;
+        top: 38vw;
+        padding-right: 21vw;
+        font-size: 3.5vw;
+    }
+
+    .product {
+        border: 0;
+        border-radius: 2vw;
+        padding-left: 8.5vw;
+        width: 100%;
+        margin-bottom: 3vw;
+        display: block;
+    }
+
+    .sentence {
+        width: 55%;
+        height: 35vw;
+        background-color: #FFFFFF;
+        font-family: sahel;
+        font-size: 4.5vw;
+        padding: 6vw 6vw;
+        float: left;
+        border-top-left-radius: 2vw;
+        border-bottom-left-radius: 2vw;
+
+    }
+
+    .picture {
+
+        border: 0;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+        width: 35%;
+        height: 35vw;
+        padding: 1.2vw 0.5vw;
+        float: left;
+        overflow: hidden;
+
+    }
+
+    .book, .resource {
+        width: 60%;
+        height: auto;
+        padding-top: 5vw;
+    }
+
+    .picture_note {
+        width: 30.7vw;
+        height: 34vw;
+        position: relative;
+        right: -0.1vw;
+        top: -0.8vw;
+        border-top-right-radius: 1vw;
+        border-bottom-right-radius: 1vw;
+    }
+
+
+    .star {
+        width: 15%;
+        height: auto;
+
+    }
+
+    .position-star {
+        position: relative;
+        top: 10.5vw;
+        right: 10vw;
+    }
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11,
+    .col-lg-12, .col-lg-2, .col-lg-3,
+    .col-lg-4, .col-lg-5,
+    .col-lg-6, .col-lg-7,
+    .col-lg-8, .col-lg-9,
+    .col-md-1, .col-md-10,
+    .col-md-11, .col-md-12,
+    .col-md-2, .col-md-3,
+    .col-md-4, .col-md-5, .col-md-6,
+    .col-md-7, .col-md-8, .col-md-9, .col-sm-1,
+    .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2,
+    .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+    .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1,
+    .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2,
+    .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+    .col-xs-7, .col-xs-8, .col-xs-9 {
+        margin: 0;
+        padding: 0;
+    }
+
+    /** slide nav ***/
+    .menu {
+        position: absolute;
+        top: 0;
+        border-left: none;
+    }
+
+    .sideNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        right: 0;
+        background-color: #FF9200;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+    }
+
+    .sideNav .rad :hover {
+        color: #FFFFFF;
+    }
+
+    .sideNav .closeBtn {
+        position: absolute;
+        top: 6vw;
+        right: 6vw;
+        font-size:4.1vw;
+        font-family: sahel;
+        margin-left: 5vw;
+        color: white;
+        display: inline-block;
+    }
+
+    .sideNav .close-btn {
+        width: 9.6vw;
+        height: auto;
+        padding: 0 3.1vw;
+    }
+
+    .sideNav .filter {
+        position: absolute;
+        right: 46vw;
+        top: 5vw;
+        width: 8vw;
+        height: auto;
+        display: inline-block;
+    }
+
+    .menu-document {
+        position: absolute;
+        top: 20vw;
+        right: 7vw;
+        width: 100%;
+    }
+
+    .main {
+        position: relative;
+        top: 6vw;
+        width: 60vw;
+    }
+
+    .rad {
+        color: #FFFFFF;
+        font-size:4.1vw;
+        margin-bottom: 1vw;
+        padding: 1.2vw 1vw;
+    }
+
+    .rad > i, .ckb > i {
+        height: 3.6vw;
+        width: 3.6vw;
+        border: 1px solid #FFFFFF;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sideNav {
+            padding-top: 15px;
+        }
+
+        .sideNav .rad {
+            font-size:4.1vw;
+        }
+
+    }
+    .title {
+        position: absolute;
+        right: 10vw;
+        top: 0.1vw;
+    }
+
+
+}

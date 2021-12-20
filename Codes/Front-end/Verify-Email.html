@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>تایید ایمیل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="Restore-Password.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .container .title-login {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<!--------Header-------------------------------------------------------------------------------------------------------->
+<header>
+    <div class="container-fluid">
+        <div class="navbar-header navbar-right">
+            <p class="navbar-brand "><span><img class="logo" src="Assets/Logo.png"></span>دانشگاه
+                خوارزمی</p>
+        </div>
+    </div>
+</header>
+<br><br>
+<!-------Content-------------------------------------------------------------------------------------------------------->
+
+<div class="container">
+    <div class="row">
+        <!---- Login title ------>
+        <div class="col-xs-6 col-sm-7 title-login">
+            <div class="title">تایید ایمیل</div>
+        </div>
+
+    </div>
+</div>
+<!---- form login --------->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-7">
+            <div class="login-form">
+                <form action="">
+
+                    <div class="form-group form-group-lg">
+                        <input type="password" name="password" class="form-control" placeholder="کد تایید"
+                               id="code_input">
+                    </div>
+
+                    <button class="btn btn-lg verifyEmail" type="button" onclick="verifyEmail()">تایید</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!--- Login -->
+        <div class="col-sm-5 login">
+
+            <div class="background-IconLogin">
+                <img src="Assets/IconLogin.png" class="IconLogin">
+                <div class="register">تایید ایمیل</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="js/const.js"></script>
+<script src="js/authentication.js"></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="Products.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!--------Header-------------------------------------------------------------------------------------------------------->
+
+<header>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-3 ">
+                <!---- Avatar-------->
+
+                <button type="button" class="avatar"><img src="Assets/IconAvatar.png"
+                                                          style="width: 35% ; height: auto ;"></button>
+
+            </div>
+
+            <div class="col-sm-6 ">
+                <!------- Search Documents --------->
+                <form action="" class="search">
+                    <input type="text" placeholder="جستجو" name="search" id="search">
+                    <button type="submit"><img class="IconSearch" src="Assets/IconSearch.png"></button>
+
+                </form>
+
+            </div>
+
+            <div class="col-sm-3 ">
+                <!------ Logo -------->
+                <div class="navbar-header navbar-right">
+                    <div class="university">دانشگاه خوارزمی</div>
+                    <p class="navbar-brand "><span><img class="logo" src="Assets/Logo.png">
+                        <img class="menu-picture" onclick="openNav()" src="Assets/IconMobileAdvanceSearch.png">
+                    </span><span class="University">دانشگاه خوارزمی</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-------------------------------products ------------------------------------------------------------------------------>
+<div class="container-fluid">
+    <div class="row">
+
+
+        <div class="col-sm-9 Documents">
+            <div class="container-fluid">
+                <div class="row" id="products">
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+                        <div class="document">
+
+                            <div class="sentence">
+                                <p>کتاب شماره یک</p>
+                                <div class="position-star">
+                                    <div><img src="Assets/star-gray.png" class="star"></div>
+                                    <div><img src="Assets/star-gray.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                </div>
+                            </div>
+
+                            <div class="picture text-center">
+                                <img class="book" src="Assets/IconNote.png">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>جزوه شماره یک</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="picture_note" src="Assets/1.jpg">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>منبع شماره یک</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="resource" src="Assets/IconResource.png">
+                        </div>
+
+
+                    </div>
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>کتاب شماره دو</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="book" src="Assets/IconNote.png">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>جزوه شماره دو</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="picture_note" src="Assets/1.jpg">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>منبع شماره دو</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="resource" src="Assets/IconResource.png">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+                        <div class="document">
+
+                            <div class="sentence">
+                                <p>کتاب شماره سه</p>
+                                <div class="position-star">
+                                    <div><img src="Assets/star-gray.png" class="star"></div>
+                                    <div><img src="Assets/star-gray.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                </div>
+                            </div>
+
+                            <div class="picture text-center">
+                                <img class="book" src="Assets/IconNote.png">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>جزوه شماره سه</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="picture_note" src="Assets/1.jpg">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>منبع شماره سه</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="resource" src="Assets/IconResource.png">
+                        </div>
+
+
+                    </div>
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>کتاب شماره چهار</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="book" src="Assets/IconNote.png">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>جزوه شماره چهار</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="picture_note" src="Assets/1.jpg">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>منبع شماره چهار</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="resource" src="Assets/IconResource.png">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+                        <div class="document">
+
+                            <div class="sentence">
+                                <p>کتاب شماره پنج</p>
+                                <div class="position-star">
+                                    <div><img src="Assets/star-gray.png" class="star"></div>
+                                    <div><img src="Assets/star-gray.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                    <div><img src="Assets/star-yellow.png" class="star"></div>
+                                </div>
+                            </div>
+
+                            <div class="picture text-center">
+                                <img class="book" src="Assets/IconNote.png">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>جزوه شماره پنج</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="picture_note" src="Assets/1.jpg">
+                        </div>
+
+
+                    </div>
+
+                    <!----------Document -------->
+
+                    <div class="product">
+
+
+                        <div class="sentence">
+                            <p>منبع شماره پنج</p>
+                            <div class="position-star">
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-gray.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                                <div><img src="Assets/star-yellow.png" class="star"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="picture text-center">
+                            <img class="resource" src="Assets/IconResource.png">
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <!-------------------------------------------------------------------------------->
+
+            </div>
+        </div>
+    </div>
+    <!------------------------- Choose type of Documents ------------------------------------------------------------>
+
+    <div class="col-sm-3 menu">
+        <div id="mySideNav" class="sideNav">
+            <div class="closeBtn" onclick="closeNav()">
+                <img class="close-btn" src="Assets/IconMobileClose.png">فیلتر کردن
+            </div>
+            <img class="filter" src="Assets/IconMobileFilter.png">
+            <div class="menu-document">
+                <a href="#">
+                    <label class="rad">
+                        <input type="radio" name="rad1" value="a">
+                        <i></i> جزوه
+                    </label>
+                </a>
+
+                <br>
+
+                <a href="#">
+                    <label class="rad">
+                        <input type="radio" name="rad1" value="b">
+                        <i></i> منبع
+                    </label>
+                </a>
+
+                <br>
+
+                <a href="#">
+                    <label class="rad">
+                        <input type="radio" name="rad1" value="c">
+                        <i></i> کتاب دست دوم
+                    </label>
+                </a>
+
+                <br>
+
+                <a href="#">
+                    <label class="rad active">
+                        <input type="radio" name="rad1" value="d">
+                        <i></i> همه موارد
+                    </label>
+                </a>
+            </div>
+
+        </div>
+        <!------->
+
+
+    </div>
+
+</div>
+</div>
+
+
+<!-- Script -------------------------->
+<script>
+
+    function openNav() {
+        document.getElementById("mySideNav").style.width = "60vw";
+    }
+
+    function closeNav() {
+        document.getElementById("mySideNav").style.width = "0";
+    }
+
+
+</script>
+
+</body>
+</html>

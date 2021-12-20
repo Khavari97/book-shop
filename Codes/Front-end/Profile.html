@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="Profile.css" type="text/css" rel="stylesheet">
+    <link href="For-All-Page.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<!--------Header-------------------------------------------------------------------------------------------------------->
+
+<header class="ShowBlur Header">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <!--- Avatar --->
+            </div>
+            <div class="col-sm-6"></div>
+            <div class="col-sm-3">
+                <div class="navbar-header navbar-right animate__animated animate__fadeIn" onclick="goMainPage()">
+                    <div class="university">دانشگاه خوارزمی</div>
+                    <p class="navbar-brand "><span><img class="Logo" src="Assets/Logo.png"
+                                                        style="width: 20% ; height: auto ; margin-right: 0vw ">
+                        <img class="menu-picture" onclick="openNav()" src="Assets/IconMobileMenu.png">
+                    </span><span class="University">دانشگاه خوارزمی</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!------------------------- Content ----------------------------------------->
+<div class="container-fluid ShowBlur">
+    <div class="row">
+        <!-------------Document-------------------->
+        <div class="col-sm-9 partOfDocuments">
+            <!---Document lists to buy-------------->
+            <div class="title animate__animated animate__fadeIn ">لیست جزوات خریداری شده</div>
+            <section class="Documents ">
+
+                <div id="purchases">
+
+                </div>
+
+            </section>
+
+
+            <!--------------------- Title for My documents ------------>
+            <section>
+                <div class="title animate__animated animate__fadeIn">
+                    <button class="btn addFile ShowModal" onclick="showModal('modal_MakeNote')"><img
+                        class="image-btn"
+                        src="Assets/IconAdd.png">
+                    </button>
+                    جزوات من
+
+                </div>
+
+            <!----------------My Documents--------------->
+                <div id="notes">
+
+                </div>
+
+
+            </section>
+            <!------------------------- My Books ---------------------------------------------------------------->
+            <section>
+                <div class="title animate__animated animate__fadeIn">
+                    <button class="btn addBook ShowModal animate__animated animate__fadeIn" onclick="showModal('modal_MakeBook')">
+                        <img class="image-btn" src="Assets/IconAdd.png"></button>
+                    کتب دست دوم من
+                </div>
+                <!-- <div class="sentence animate__animated animate__fadeInDown "> کتاب دست دومی موجود نیست.</div> -->
+                <div id="books">
+
+                </div>
+            </section>
+        </div>
+        <!---------------------------- User Profile ------------------------------------------------------------------------>
+        <div class="col-sm-3 Menu ">
+            <div id="mySideNav" class="sideNav">
+                <div class="closeBtn" onclick="closeNav()">
+                    <img class="close-btn" src="Assets/IconMobileClose.png">
+                </div>
+
+                <!---- Avatar---->
+                <div class="Background_Avatar"><img class="Avatar_image" src="Assets/IconAvatar.png"></div>
+
+                <div class="menu-document animate__animated animate__fadeIn">
+
+
+                    <div class="Name_Email">
+                        <!------- Name----------->
+                        <div class="Name main">
+                            <div class="Name-user" id="user-name">علیرضا احمدی</div>
+                        </div>
+                        <!------- Email ----------->
+                        <div class="Email main">
+                            <div class="Email-user" id="user-email">a.ahmadi@khu.ac.ir</div>
+                        </div>
+
+                    </div>
+                    <!----- Edit ----->
+                    <div>
+                        <button class="menu ShowModal main" onclick="showModal('modal_edit_profile', '', null)">ویرایش
+                            مشخصات
+                        </button>
+                    </div>
+                    <!------ Messages --------->
+                    <div>
+                        <button onclick="showConversations()" class="menu ShowModal main" >پیام
+                            ها
+                        </button>
+                    </div>
+                    <!------ Restore password ------>
+                    <div>
+                        <button class="menu ShowModal main" onclick="showModal('modal_change_password', '', null)">
+                            تغییررمزعبور
+                        </button>
+                    </div>
+                    <div>
+                        <button class="menu ShowModal main" id="logout">
+                            خروج
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+</div>
+</div>
+<!------------------------------------ part of modals ------------------>
+<!------ modal for Edit ------------>
+<div id="modal_edit_profile" class="modal modal_Edit animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button " onclick="closeEditProfileModal('false')"><img class="close-image"
+                                                                            style="width: 45% ; height:auto"
+                                                                            src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+                    </button>
+                    <div class="title_message title- title-m">ویرایش مشخصات</div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-body">
+
+                <!----Form ---->
+                <form action="">
+                    <div class="image"><img class="Avatar_image" src="Assets/IconAvatar.png"></div>
+                    <div class="form-group ">
+                        <input type="text" name="name" class="form-control" placeholder="نام" id="name-input">
+                    </div>
+
+                    <div class="form-group ">
+                        <input type="email" name="email" class="form-control" placeholder="ایمیل"
+                               id="email-input">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn_Edit" type="button" onclick="changeUserInfoRequest()">تغییر مشخصات</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- Modal for Restore Password ---------------->
+<div id="modal_change_password" class="modal modal_Restore animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeChangePasswordModal()"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+
+                    </button>
+                    <div class="title_message title- title-m">تغییر رمز عبور</div>
+
+
+                </div>
+
+                <div class="modal-body">
+                    <div class="form">
+
+                        <!----Form ---->
+                        <form action="">
+
+                            <div class="form-group ">
+                                <input type="password" name="password" class="form-control" placeholder="رمز عبور"
+                                       id="password">
+                            </div>
+
+                            <div class="form-group ">
+                                <input type="password" name="confim-password" class="form-control"
+                                       placeholder="تکرار رمز عبور" id="confirm-password">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn_Restore" type="button" onclick="changePasswordRequest()">تغییر رمز عبور</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!------ modal for Make_Note ------------>
+<div id="modal_MakeNote" class="modal modal_MakeNote animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeEditModal('modal_MakeNote', 'note')">
+                        <img class="close-image" style="width: 45% ; height:auto" src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+
+                    </button>
+
+
+                    <p class="add-m" id="mode-note">اضافه کردن جزوه</p>
+
+                </div>
+
+            </div>
+
+            <div class="modal-body">
+                <!-------Adding Notes ------->
+                <div class="Adding-Note" id="note-images-div">
+                    <div class="Add-Note" id="note-images-input-div">
+                        <input class="AddingFile-Note" type="file" id="note-images-input" name="note-images" accept="image/*" multiple>
+                    </div>
+                </div>
+                <!----- Enter Title & Price -------->
+                <form class="form-horizontal" action="">
+                    <input type="text" name="id" id="id-note" hidden>
+                    <div class="Note-title">
+                        <div class="form-group">
+
+                            <input type="text" name="title" class="form-control n-title" placeholder="عنوان" id="title-note">
+
+                        </div>
+                    </div>
+
+                    <div class="Price-title">
+                        <div class="form-group">
+
+                            <input type="text" name="price" class="form-control price" placeholder="قیمت" id="price-note">
+
+                        </div>
+                    </div>
+
+                </form>
+                <!---- Toman ------------->
+                <div class="toman">تومان</div>
+                <!--------- Text area ---------------->
+                <div class="comments">
+                    <label for="comment"></label>
+                    <textarea class="form-control comment " placeholder="توضیحات" id="description-note" name="comment">
+
+                </textarea>
+                </div>
+
+
+            </div>
+
+            <div class="modal-footer">
+                <!----- Upload  & Do Buttons -------->
+                <button class="btn DoButton" onclick="addEditProduct('note')">انجام</button>
+                <label for="note-file-input" class="btn Upload" id="file-name">آپلودفایل جزوه</label>
+                <input class="btn Upload" type="file" id="note-file-input" style="display: none;">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!------ modal for Make_Book ------------>
+<div id="modal_MakeBook" class="modal modal_MakeBook animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeEditModal('modal_MakeBook', 'book')">
+                        <img class="close-image" style="width: 45% ; height:auto" src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+
+                    </button>
+
+
+                    <p class="add-m" id="mode-book">اضافه کردن کتاب</p>
+
+                </div>
+
+            </div>
+
+            <!-- <img src="Assets/IconeAdd_Orange.png"> -->
+            <div class="modal-body">
+                <!-------Adding Book ------->
+                <div class="Adding-Note" id="book-images-div">
+                    <div class="Add-Note" id="book-images-input-div">
+                        <input class="AddingFile-Note" type="file" id="book-images-input" name="book-images" accept="image/*" multiple>
+                    </div>
+                </div>
+                <!----- Enter Title & Price -------->
+                <form class="form-horizontal" action="">
+                    <input type="text" name="id" id="id-book" hidden>
+                    <div class="book-title">
+                        <div class="form-group ">
+
+                            <input type="text" name="title" class="form-control b-title" placeholder="عنوان"
+                                   id="title-book">
+
+                        </div>
+                    </div>
+
+                    <div class="book-price">
+                        <div class="form-group">
+
+                            <input type="text" name="price" class="form-control b-price" placeholder="قیمت"
+                                   id="price-book">
+
+                        </div>
+                    </div>
+
+                    <!--- writer --->
+                    <div class="book-title">
+                        <div class="form-group ">
+
+                            <input type="text" name="writer" class="form-control b-writer" placeholder="نویسنده"
+                                   id="writer-book">
+
+                        </div>
+                    </div>
+
+                </form>
+                <!---- Toman ------------->
+                <div class="toman">تومان</div>
+                <!--------- Text area ---------------->
+                <div class="comments">
+                    <label for="comment"></label>
+                    <textarea class="form-control comment " placeholder="توضیحات" id="description-book" name="comment">
+
+                </textarea>
+                </div>
+
+
+            </div>
+
+            <div class="modal-footer">
+                <!----- Do button -------->
+                <button class="btn DoButton" onclick="addEditProduct('book')">انجام</button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_Messages" class="modal modal_Message animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_Messages')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p></button>
+                    <div class="title_message title-"> پیام ها</div>
+                </div>
+
+            </div>
+            <div class="modal-body Modal" id="conversations-div">
+
+                <!-- <div class="name_sailor">مهدی نوروزی<img class="flash" src="Assets/IconReply.png"></div>
+                <div class="content_message"><p>لورم اپیسوم متن ساختگی باتولید سادگی نامفهوم از صنعت چاپ وبا استفاده از
+                    طراحان گرافیک است.چاپگرها ومتون بلکه روزنامه ومجله درستون وسطر آنچنان که لازم است....</p></div>
+
+                <div class="name_sailor">علی بهرامی<img class="flash" src="Assets/IconReply.png"></div>
+                <div class="content_message"><p>لورم اپیسوم متن ساختگی باتولید سادگی نامفهوم از صنعت چاپ وبا استفاده از
+                    طراحان گرافیک است.چاپگرها ومتون بلکه روزنامه ومجله درستون وسطر آنچنان که لازم است....</p></div> -->
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+
+        </div>
+    </div>
+</div>
+<!--- modal for details message(Profile page)--->
+<div id="modal_details_message" class="modal  modal_details_message animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_details_message')"><img class="close-image"
+                                                                                                     style="width: 45% ; height:auto"
+                                                                                                     src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p></button>
+                    <div class="name_sailor title- ">
+                        <img class="flash" src="Assets/IconReply_White.png">  
+                        <span id="contact-name"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body" id="send-message-modal" style="position: relative;">
+
+            </div>
+            <div class="modal-footer">
+                <textarea class=" form-control type_message" id="type-message" type="text" placeholder="بنویسید...">
+                </textarea>
+
+
+                <button class="send_button" type="button" onclick="sendMessage('message_in_profile')"><img src="Assets/IconSend.png"></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---- modal_DeleteDocuments ---------->
+<div id="modal_DeleteDocuments" class="modal modal_DeleteDocuments animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_DeleteDocuments')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="modal-body Modal">
+                <!--- picture --->
+                <div class="Delete">
+                    <img class="delete" src="Assets/UnsuccessfulIcon@2x.png">
+                </div>
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+            <div class="problem">از حذف کردن این آیتم اطمینان دارید؟</div>
+            <button class="confirmation" id="delete_product_button">بله</button>
+        </div>
+    </div>
+</div>
+
+<!-------- Modal for Unsuccessful Message ------------->
+<div id="modal_UnSuccessfulMessage" class="modal modal_UnSeccessfulMessage animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_UnSuccessfulMessage')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="modal-body Modal">
+                <!--- picture --->
+                <div class="Unseccessful">
+                    <img class="unseccessful" src="Assets/UnsuccessfulIcon@2x.png">
+                </div>
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+            <div class="problem" id="unsuccessful_msg"></div>
+        </div>
+    </div>
+</div>
+
+<!-------- Modal for Successful Message ------------->
+<div id="modal_SuccessfulMessage" class="modal modal_SeccessfulMessage animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_SuccessfulMessage')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <!--- picture --->
+                <div class="Seccessful">
+                    <img  class="seccessful" src="Assets/SuccessfulIcon@2x.png">
+                </div>
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+            <div class="problem" id="successful_msg"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/const.js"></script>
+<script>
+    function goMainPage() {
+        window.location.assign('IntroductionPage.html');
+    }
+</script>
+<script>
+    var logout = document.getElementById('logout');
+    logout.addEventListener('click', () => {
+        window.localStorage.removeItem(TOKEN_KEY_SOTRAGE);
+        window.location.replace('IntroductionPage.html');
+    });
+</script>
+<script src="js/showCloseModal.js"></script>
+<script>
+    /*** SideNav for mobile ui ***/
+    function openNav() {
+        document.getElementById("mySideNav").style.width = "75vw";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySideNav").style.width = "0";
+    }
+    /***/
+</script>
+
+<script>
+
+    document.getElementById('note-file-input').onchange = function () {
+        if(this.value != null)
+            document.getElementById('file-name').innerHTML = 'فایل انتخاب شد';
+    };
+
+    var noteImageDiv = '';
+    var bookImageDiv = '';
+    document.addEventListener("DOMContentLoaded", init, false);
+    function init() {
+        document.querySelector('#note-images-input').addEventListener('change', (e) => {handleFileSelect(e, 'note');}, false);
+        document.querySelector('#book-images-input').addEventListener('change', (e) => {handleFileSelect(e, 'book');}, false);
+        noteImageDiv = document.querySelector("#note-images-div");
+        bookImageDiv = document.querySelector("#book-images-div");
+    }
+    function handleFileSelect(e, type) {
+        if(!e.target.files || !window.FileReader) return;
+        var files = e.target.files;
+        var filesArr = Array.prototype.slice.call(files);
+        filesArr.forEach(function(f) {
+            if(!f.type.match("image.*")) {
+                return;
+            }
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var mainDiv = document.createElement('div');
+                mainDiv.classList.add('Add-Note');
+                var img = document.createElement('img');
+                img.classList.add('AddNote');
+                img.src = e.target.result;
+                mainDiv.appendChild(img);
+                if(type == BOOK_KEY)
+                    bookImageDiv.appendChild(mainDiv);
+                else
+                    noteImageDiv.appendChild(mainDiv);
+            }
+            reader.readAsDataURL(f);
+        });
+    }
+</script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/userProfile.js"></script>
+<script src="js/messageApi.js"></script>
+</body>
+</html>

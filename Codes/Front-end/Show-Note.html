@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Note</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="Show-Note.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+
+<!--------Header-------------------------------------------------------------------------------------------------------->
+
+<header class="ShowBlur">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-3 col-xs-4">
+
+                <button type="button" class="avatar"><img class="avatar-img" src="Assets/IconAvatar.png"></button>
+            </div>
+
+            <div class="col-sm-9 col-xs-8" onclick="goMainPage()">
+                <div class="navbar-header navbar-right">
+                    <p class="navbar-brand "><span><img src="Assets/Logo.png" class="logo">
+                    </span>دانشگاه خوارزمی</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!------------------------- Content ----------------------------------------->
+<!--- details of Note --->
+<div class="Details ">
+    <div class="details">
+        <p class="title ShowBlur" id="title">عنوان جزوه</p>
+        <p class="price ShowBlur" id="price">5,000 </p>
+        <p class="toman ShowBlur">تومان</p>
+    </div>
+</div>
+ <!-------->
+<div class="container-fluid ShowBlur">
+
+    <div class="row">
+
+        <!--------- Show Notes ----------------------------->
+
+
+        <div class="col-sm-3 Part-Of-Images ">
+            <div class="partOfImages">
+                <img src="Assets/1.jpg" class="note" id="bigImage">
+
+                    <div class="Notes" id="smallImages">
+                      
+
+                    </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="col-sm-9 Details">
+
+           <div class="content-note">
+               <!---- explain -------->
+               <p class="explain" id="description">
+                   لورم اپیسوم متن ساختگی باتولیدساختگس نامفهوم از صنعت چاپ ، وبااستفاده از صنعت گرافیک است ،
+                   چاپگرهاومتون بلکه روزنامه ومجله درستون وسطرآنچنان که لازم است ، وبرای شرایط فعلی تکنولوژی
+                   موردنیازوکاربردهای متعددباهدف بهبودابزارهای کاربردی می باشد، کتابهای زیادی درشصت وسه درصدگذشته حال
+                   وآینده شناخت فراوان جامعه ومتخصصان رامیطلبد، تابانرم افزارها شناخت بیشتری رابرای طراحان رایانه ای علی
+                   الخصوص طراحان خلاقی وفرهنگ پیشرودرزبان فارسی ایجادکرد.دراینصورت میتوان امیدداشت که تمام دشواری های موجود
+                   در اراِِئه راهکارهاوشرایط سخت تایپ
+                   به پایان رسدوزمان موردنیاز شامل حروفچینی دستاوردهای اصلی، وجوابگوی سوالات پیوسته اهل دنیای موجودطراحی
+                   اساسا مورداستفاده
+                   قرارگیرد.
+
+               </p >
+
+               <div class="buttons">
+                   <!------- Button for buy -------->
+                   <div>
+                       <button class="btn btn-lg buy" type="button" id="buy" onclick="buyButton()">خرید</button>
+                   </div>
+                   <!--------------button for send message -------------------------->
+                   <div>
+                       <button class="btn btn-lg message" onclick="checkHasConversation()">پیام به فروشنده</button>
+
+                   </div>
+               </div>
+
+           </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>
+<div id="modal_details_message" class="modal modal_MakeBook animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_details_message')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p></button>
+                    <div class="title_message title- title-m">پیام به فروشنده</div>
+                </div>
+
+            </div>
+            <div class="modal-body" id="send-message-modal">
+
+
+            </div>
+            <div class="modal-footer">
+                <textarea class=" form-control type_message" id="type-message" type="text" placeholder="بنویسید...">
+                </textarea>
+
+
+                <button class="send_button" id="send-button" onclick="sendMessage('message_in_document')" type="button"><img src="Assets/IconSend.png"></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function buyButton() {
+        var obj = JSON.parse(window.localStorage.getItem(PRODUCT_OBJECT_KEY_STORAGE));
+        var noteID = obj[NOTE_ID_KEY];
+        var accessToken = window.localStorage.getItem(TOKEN_KEY_SOTRAGE);
+        
+        var buy = new XMLHttpRequest();
+        var buyURL = BASE_URL + 'api/payment/pay.php?' +
+            ACCESS_TOKEN_KEY + '=' + accessToken + '&' + NOTE_ID_KEY + '=' + noteID;
+            console.log(buyURL);
+        buy.onreadystatechange = function () {
+            if (buy.readyState === 4 && buy.status === 200) {
+                var response = JSON.parse(buy.responseText);
+                if (response[CODE_KEY] === 7898) {
+                    console.log('Correct');
+                    console.log(response);
+                    window.open(response[LINK_KEY], '_blank');
+                } else {
+                    console.log(response[CODE_KEY], response[MESSAGE_KEY]);
+                }
+            } else {
+                console.log('There is an Erorr!!')
+            }
+        };
+        buy.open('GET', buyURL);
+        buy.send();
+    }
+</script>
+<script>
+    function goMainPage() {
+        window.location.assign('IntroductionPage.html');
+    }
+</script>
+<script src="js/const.js"></script>
+<script src="js/showCloseModal.js"></script>
+<script src="js/showProduct.js"></script>
+<script src="js/messageApi.js"></script>
+</body>
+</html>

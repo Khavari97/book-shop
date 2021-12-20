@@ -1,0 +1,5 @@
+<link rel="stylesheet" href="https://api.fontgraphy.ir/css?family=sahel">
+font-family: sahel, sans-serif;
+
+<link rel="stylesheet" href="https://api.fontgraphy.ir/css?family=lalezar">
+font-family: lalezar, sans-serif;

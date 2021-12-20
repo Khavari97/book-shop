@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>IntroductionPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="IntroductionPage.css" type="text/css" rel="stylesheet">
+    <link href="Animation.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<!-----------------------------Body------------------------------->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!---- Navbar -------->
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header navbar-right">
+                <button type="button" onclick="myFunction(this)" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+
+                </button>
+                <a class="navbar-brand" href="#myPage">
+                    <div class="University"> دانشگاه خوارزمی</div>
+                    <span class="brand" style="margin-left: 30px">
+                    <img src="Assets/Logo.png"
+                         style="width:20% ; height:auto"></span>دانشگاه
+                    خوارزمی</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a class="active" href="#Home">خانه</a></li>
+                    <li><a href="#Know_more">بیشتربدانید</a></li>
+                    <li><a href="#Search">جستجو</a></li>
+                    <li><a href="#A_bout_us">درباره ما</a></li>
+                    <li><a href="#Contact_us">ارتباط با ما</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- ---------Home--------------->
+
+<div class="container-fluid" id="Home">
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <div class="picture-title">
+                <img  class=" animated bounce" src="Assets/Bg-01-01.png" class="img-responsive"
+                     style="width:70% ; height: auto ; position:relative ;right:30vw ; top:7vw">
+                <img class=" animated fadeingPicture" src="Assets/Vct-01-01.png" class="img-responsive"
+                     style="width: 40% ; height: auto ;position:absolute; top:14vw; left:6.2vw">
+
+            </div>
+            <h2 class="eshterak animated fadeingOne"> با ما
+                به
+                اشتراک
+                بگذارید...</h2>
+            <div class="explain animated fadeingTwo">
+                شما میتوانید جزوات و کتب دست دوم خودرا به وسیله این سامانه دراختیار<br> دیگران قرار دهید ویاآنها را به
+                فروش برسانید...
+            </div>
+            <br>
+            <!--- button_Register ------->
+            <a href="Login-Register.html">
+                <button class="btn button-Register animated fadeingThree" type="button">ورود/ثبت نام</button>
+            </a>
+            <a href="Profile.html">
+                <button id="show-profile" style="display: none;" class="btn button-Register animated fadeingThree" type="button">مشاهده پروفایل</button>
+            </a>
+            <div>
+                <!------------ Pannels ------------------->
+                <!--- Books------->
+
+                <div class="size animated fade " id="s1">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Assets/IconBook.png" class="img-responsive" id="IconBook">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعدادكتب</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>348</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <!------ members------------>
+                <div class="size animated fade" id="s2">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Assets/IconAvatar.png" class="img-responsive" id="IconAvatar">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعداداعضاء</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>450</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-------- Notes ------->
+                <div class="size animated fade" id="s3">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Assets/IconNote.png" class="img-responsive" id="IconNote">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعدادجزوات</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>1263</b></p>
+                        </div>
+
+                    </div>
+                </div>
+                <!------ Documents ------------>
+                <div class="size animated fade" id="s4">
+                    <div class="panel text-center">
+                        <div class="panel-heading">
+                            <img src="Assets/IconResource.png" class="img-responsive" id="IconResource">
+                        </div>
+                        <div class="panel-body">
+                            <p>تعدادمنابع</p>
+                        </div>
+                        <div class="panel-footer">
+                            <p><b>156</b></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!----------------Know_more------------------>
+<div class="container-fluid" id="Know_more">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-5 col-xs-12 slideanim ">
+            <img id="V1" src="Assets/Bg-01-02@2x.png">
+            <img id="knowmore" src="Assets/Vct-01-02.png">
+            <p class="p1" style="position: absolute ; right: 12vw ; font-size: 3vw ; top: 3vw ; color: #FFFFFF">
+                جزوات</p>
+            <p class="p1"
+               style="position: absolute ; right: 7vw ; font-size: 3vw ; top: 3vw ; padding: 5vw 1vw; color: #FFFFFF">
+                کتب دست دوم</p>
+            <p class="p1"
+               style="position: absolute ; right: 12vw ; font-size: 3vw ; top: 3vw ; padding: 10vw 1vw; color: #FFFFFF">
+                منابع</p>
+
+        </div>
+        <div class="col-sm-7 col-xs-12">
+            <h1 class="type1 slideanim">بیشتربدانید...</h1>
+            <p id="p2" class="type2 slideanim">در دنیای امروز که همگام با پیشرفت چشمگیر فناوری است،اشتراک اسناد دیگر بصورت چاپی نیست.
+            همچنین افراد برای خرید وفروش کتابهای قدیمی خود،به کتابفروشی ها مراجعه نمیکنندوسعی دارند درجوامع فرهنگی که حضور دارند،مشتری یا فروشنده خود را پیداکنند.
+            این مسئله هم باعث صرفه جویی در کاغذوضرر کمتر به محیط زیست میشودوباارتباط مستقیم فروشنده ومشتری دست افراد سودجو از معاملات مربوط به این خریدوفروش کوتاه شده است.</p>
+
+        </div>
+    </div>
+</div>
+<!-----------Search------------------>
+<div class="container-fluid" id="Search">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-7 col-xs-12">
+            <p id="p3" class="type2 slideanim " style="margin-top: 3vw">تعداد زیادی جزوه به همراه آگهی هایی از کتب دست دوم روی این سامانه موجود استوشما میتوانید تنها با دانستن بخشی ازنام جزوه یاکتاب مورد نظر،آن را پیداکنید.
+            سپس میتوانید مبلغ جزوه مورد نظر راپرداخت وفایل آن را دریافت کنید
+            یا اگر به دنبال کتاب هستید،ازطریق همین سامانه به فروشنده آن پیام دهید وهماهنگی های لازم راانجام دهید.
+            همچنین تعدادی منابع علمی مربوط به رشته های مختلف موجوداست که میتوانید آنهارابصورت رایگان دریافت کنید.</p>
+            <br>
+            <div class="form-group search slideanim">
+                <input type="text" class="form-control" id="search-title" placeholder="جستجو" name="search">
+                <button>
+                    <span id="search-type">جزوه</span>
+                    <!-- dropdown-menu --->
+                    <div class="dropdown">
+                        <a class="dropbtn glyphicon glyphicon-chevron-down">
+                            
+                        </a>
+                        <!-- content -->
+                        <div class="dropdown-content" id="dropdown-menu">
+                            <label class="dropdown-item">جزوه</label>
+                            <label class="dropdown-item">کتب دست دوم</label>
+                            <label class="dropdown-item">منبع</label>
+                        </div>
+                    </div>
+                </button>
+            </div>
+
+        </div>
+        <div class="col-sm-5 col-xs-12 slideanim">
+            <img id="V2" src="Assets/Bg-01-03.png">
+            <img id="search-doc" src="Assets/Vct-01-03.png">
+            <div id="title-search">جستجو</div>
+
+        </div>
+    </div>
+</div>
+<!-----------A bout us----------------->
+<div class="container-fluid" id="A_bout_us">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-5 col-xs-12 slideanim">
+            <img id="V3" src="Assets/Bg-01-02.png">
+            <img id="about" src="Assets/Vct-01-04.png">
+            <p id="title-aboutUs">درباره ما</p>
+
+        </div>
+        <div class="col-sm-7 col-xs-12">
+            <p id="p4" class="type2 slideanim" style="margin-top: 4vw">بوکشاپ، اززمستان سال 1398 با پنج نفر پرسنل فعالیت خودرا آغاز کرد.
+            این سامانه تلاش میکندتامقصد اصلی قشر علاقه مند به مطالعه و به ویژه دانشجویان به منظور استفاده از ابزار علمی و فرهنگی قابل استفاده و در دسترس باشد.</p>
+
+
+        </div>
+    </div>
+</div>
+<!-----------------Contact us----------------------------------->
+<div class="container-fluid" id="Contact_us">
+    <div class="row" style="margin-top: 20vw">
+        <div class="col-sm-7 col-xs-12">
+            <div id="p5" class="type2 slideanim">
+                در این بخش میتوانید انتقادات و پیشنهادات خود را مطرح کنید و یا اگرمشکلی پیش آمده است،آن را شرح دهیدو کارشناسان مادر اسرع وقت پاسخگوی شما خواهد بود.
+            </div>
+            <form class="comments slideanim">
+                <div class="form-group ">
+                    <label for="comment"></label>
+                    <textarea class="form-control " placeholder="پیام شما" id="comment" name="comment" rows="6">
+
+                </textarea>
+                </div>
+            </form>
+            <form action="" class="email form-group">
+                <input class="form-control" type="email" placeholder="ایمیل" name="email">
+                <button type="submit">ارسال
+                </button>
+
+            </form>
+
+
+        </div>
+        <div class="col-sm-5 col-xs-12 slideanim">
+            <img id="V4" src="Assets/Bg-01-03.png">
+            <img id="contact" src="Assets/Vct-01-05.png">
+            <p id="contactUs">ارتباط با ما</p>
+
+        </div>
+    </div>
+</div>
+<!--------------------Footer-------------------------------------------------------------------------------------------------->
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-xs-12" style="margin-top: 20vw ; padding: 0">
+
+            <img src="Assets/Bg-01-04@2x.png" style="width: 100% ; height: auto ;right: 0 ; left: 0">
+            <p style="position: absolute ;right: 13vw ; top: 15vw ; color: #FFFFFF ;font-size: 3vw">ما را در شبکه های
+                اجتماعی دنبال کنید</p>
+            <img src="Assets/LogoTelegram.png"
+                 style="position: absolute ; top: 14vw ;left: 19vw ; width:6% ; height: auto">
+            <img src="Assets/LogoFacebook.png"
+                 style="position: absolute ; top: 14vw ;left: 26vw; width:6% ; height: auto">
+            <img src="Assets/LogoLinkedin.png"
+                 style="position: absolute ; top: 14vw ;left: 33vw; width:6% ; height: auto">
+            <img src="Assets/LogoTwitter.png"
+                 style="position: absolute ; top: 14vw;left: 40vw; width:6% ; height: auto">
+            <p style="position: absolute ; right:32% ;font-family: sahel ; font-size: 1.1vw ; top: 23vw;color: #FFFFFF">
+                هرگونه کپی برداری از محتوا و برنامه های سایت مجاز نمی باشد
+            </p>
+
+
+        </div>
+    </div>
+</footer>
+
+<div id="modal_UnSuccessfulMessage" class="modal modal_UnSeccessfulMessage animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_UnSuccessfulMessage')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="modal-body Modal">
+                <!--- picture --->
+                <div class="Unseccessful">
+                    <img class="unseccessful" src="Assets/UnsuccessfulIcon@2x.png">
+                </div>
+
+
+            </div>
+            <div class="modal-footer"></div>
+
+            <div class="problem" id="unsuccessful_msg"></div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------script------------------->
+<script src="js/const.js"></script>
+<script src="js/showCloseModal.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+
+        });
+
+        $(".dropbtn").click(function () {
+            $(".dropdown-content").slideToggle("slow");
+
+        });
+
+    });
+
+    /******* Toggle menu ***************************/
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+
+    }
+
+    /****** Drop down menu for search documents ********/
+
+    var dropdownItems = document.getElementsByClassName('dropdown-item');
+    var searchType = document.getElementById('search-type');
+    window.localStorage.setItem(SEARCH_TYPE_KEY_STORAGE, NOTE_KEY);
+    for(let i = 0; i < dropdownItems.length; i++) {
+        dropdownItems[i].addEventListener('click', () => {
+            searchType.innerHTML = dropdownItems[i].textContent;
+            document.getElementById('dropdown-menu').style.display = 'none';
+            if (i == 0)
+                window.localStorage.setItem(SEARCH_TYPE_KEY_STORAGE, NOTE_KEY);
+            else if (i == 1)
+                window.localStorage.setItem(SEARCH_TYPE_KEY_STORAGE, BOOK_KEY);
+            else 
+                window.localStorage.setItem(SEARCH_TYPE_KEY_STORAGE, REFERENCE_KEY);
+            });
+    }
+        
+    searchType.addEventListener('click', () => {
+        var token = window.localStorage.getItem(TOKEN_KEY_SOTRAGE);
+        if(token != null) {
+            window.localStorage.setItem(SEARCH_TITLE_KEY_STORAGE, document.getElementById('search-title').value);
+            window.location.assign('Products.html');    
+        } else {
+            showModal(MODAL_UNSUCCESSFUL_MESSAGE_ID, YOU_MUST_LOGIN, UNSUCCESSFUL_MODAL_TYPE);
+        }
+    });
+
+</script>
+<script>
+    if(window.localStorage.getItem('982KBS_token') != null){
+        document.getElementById('show-profile').style.display = 'block';
+    }
+</script>
+
+
+</body>
+</html>

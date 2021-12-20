@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="Front-end.css" type="text/css" rel="stylesheet">
+    <link href="Fonts.css" type="text/css" rel="stylesheet">
+    <link href="Show-Book.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<!--------Header-------------------------------------------------------------------------------------------------------->
+
+<header class="ShowBlur">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-sm-3 col-xs-4">
+
+                <!--- Avatar ----->
+
+                <button type="button" class="avatar"><img class="avatar-img" src="Assets/IconAvatar.png"></button>
+
+            </div>
+
+
+            <!--- Logo ----->
+            <div class="col-sm-9 col-xs-8"  onclick="goMainPage()">
+                <div class="navbar-header navbar-right">
+                    <p class="navbar-brand "><span><img class="logo" src="Assets/Logo.png">
+                    </span>دانشگاه خوارزمی</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+<!------------------------- Content ----------------------------------------->
+<!--- details of Book --->
+<div class="Details ">
+    <div class="details ">
+        <p class="title ShowBlur" id="title">عنوان کتاب</p>
+        <p class="price ShowBlur" id="price">35,000 </p>
+        <p class="toman ShowBlur">تومان</p>
+
+    </div>
+</div>
+<!--- writer--->
+<div class="Writer">
+    <p class="writer">نویسنده :</p>
+    <p class="writer-name">نام نویسنده</p>
+</div>
+<!---------------------------------------->
+<div class="container-fluid ShowBlur">
+
+    <div class="row">
+
+        <!------- Book -------------->
+
+        <div class="col-sm-3 Part-Of-Images">
+
+            <div class="partOfImages">
+
+                <img src="Assets/1.jpg" class="note" id="bigImage">
+
+                <div class="Books" id="smallImages">
+
+                    <!--- <img src="Assets/1.jpg" class="note1"> --->
+                    <!--- <img src="Assets/1.jpg" class="note1"> --->
+                    <!--- <img src="Assets/1.jpg" class="note1"> --->
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--- explains -------->
+
+        <div class="col-sm-9 Details">
+
+            <div class="content-book">
+                <p class="explain" id="description">
+                    لورم اپیسوم متن ساختگی باتولیدساختگس نامفهوم از صنعت چاپ ، وبااستفاده از صنعت گرافیک است ،
+                    چاپگرهاومتون بلکه روزنامه ومجله درستون وسطرآنچنان که لازم است ، وبرای شرایط فعلی تکنولوژی
+                    موردنیازوکاربردهای متعددباهدف بهبودابزارهای کاربردی می باشد، کتابهای زیادی درشصت وسه درصدگذشته حال
+                    وآینده شناخت فراوان جامعه ومتخصصان رامیطلبد، تابانرم افزارها شناخت بیشتری رابرای طراحان رایانه ای علی
+                    الخصوص طراحان خلاقی وفرهنگ پیشرودرزبان فارسی ایجادکرد.دراینصورت میتوان امیدداشت که تمام دشواری های موجود
+                    در اراِِئه راهکارهاوشرایط سخت تایپ
+                    به پایان رسدوزمان موردنیاز شامل حروفچینی دستاوردهای اصلی، وجوابگوی سوالات پیوسته اهل دنیای موجودطراحی
+                    اساسا مورداستفاده
+                    قرارگیرد.
+
+                </p>
+
+                <div class="buttons">
+                    <!-------------- button for send message ------>
+                    <div>
+                        <button class="btn btn-lg message" onclick="checkHasConversation()">
+                            پیام به فروشنده
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<!---- modal for send message (modal_MakeBook for show-Book page)-------->
+<div id="modal_details_message" class="modal modal_MakeBook animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_details_message')"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p></button>
+                    <div class="title_message title- title-m">پیام به فروشنده</div>
+                </div>
+
+            </div>
+            <div class="modal-body" id="send-message-modal">
+
+
+            </div>
+            <div class="modal-footer">
+                <textarea class=" form-control type_message" id="type-message" type="text" placeholder="بنویسید...">
+                </textarea>
+
+
+                <button class="send_button" id="send-button" onclick="sendMessage('message_in_document')" type="button"><img src="Assets/IconSend.png"></button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ modal for Edit (Profile page) ------------>
+<div id="modal_Edit" class="modal modal_Edit animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg ">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button " onclick="closeModal_Edit()"><img class="close-image"
+                                                                            style="width: 45% ; height:auto"
+                                                                            src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+                    </button>
+                    <div class="title_message title- title-m">ویرایش مشخصات</div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-body">
+
+                <!----Form ---->
+                <form action="">
+                    <div class="image"><img class="Avatar_image" src="Assets/IconAvatar.png"></div>
+                    <div class="form-group ">
+                        <input type="text" name="name" class="form-control" placeholder="نام" id="name">
+                    </div>
+
+                    <div class="form-group ">
+                        <input type="email" name="email" class="form-control" placeholder="ایمیل"
+                               id="email">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn_Edit" type="submit">تغییر مشخصات</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------- Modal for Restore Password (Profile page) ---------------->
+<div id="modal_Restore" class="modal modal_Restore animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal_Restore()"><img class="close-image"
+                                                                           style="width: 45% ; height:auto"
+                                                                           src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+
+                    </button>
+                    <div class="title_message title- title-m">تغییر رمز عبور</div>
+
+
+                </div>
+
+                <div class="modal-body">
+                    <div class="form">
+
+                        <!----Form ---->
+                        <form action="">
+
+                            <div class="form-group ">
+                                <input type="password" name="password" class="form-control" placeholder="رمز عبور"
+                                       id="password">
+                            </div>
+
+                            <div class="form-group ">
+                                <input type="password" name="confim-password" class="form-control"
+                                       placeholder="تکرار رمز عبور" id="confim-password">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn_Restore" type="submit">تغییر رمز عبور</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ modal for Make_Note (Profile page)------------>
+<div id="modal_MakeNote" class="modal modal_MakeNote animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal_MakeNote()">
+                        <img class="close-image" style="width: 45% ; height:auto" src="Assets/IconClose.png">
+                        <!--- back --->
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p>
+
+                    </button>
+
+
+                    <p class="add-m">اضافه کردن جزوه</p>
+
+                </div>
+
+            </div>
+
+            <div class="modal-body">
+                <!-------Adding Notes ------->
+                <div class="Adding-Note" id="note-images-div">
+                    <!-- <div class="Add-Note"><img class="AddNote" src="Assets/1.jpg"></div> -->
+                    <!-- <div class="Add-Note"><img class="AddNote" src="Assets/1.jpg"></div> -->
+                    <!-- <div class="Add-Note"><img class="AddNote" src="Assets/1.jpg"></div> -->
+                    <div class="Add-Note">
+                        <!-- <button class="AddingFile-Note" type="button"><img src="Assets/IconeAdd_Orange.png"></button> -->
+                        <input class="AddingFile-Note" type="file" id="note-images-input" name="note-images" accept="image/*" multiple>
+                    </div>
+
+                </div>
+                <!----- Enter Title & Price -------->
+                <form class="form-horizontal" action="">
+                    <div class="Note-title">
+                        <div class="form-group">
+
+                            <input type="text" name="title" class="form-control n-title" placeholder="عنوان" id="title-note">
+
+                        </div>
+                    </div>
+
+                    <div class="Price-title">
+                        <div class="form-group">
+
+                            <input type="text" name="price" class="form-control price" placeholder="قیمت" id="price-note">
+
+                        </div>
+                    </div>
+
+                </form>
+                <!---- Toman ------------->
+                <div class="toman">تومان</div>
+                <!--------- Text area ---------------->
+                <div class="comments">
+                    <label for="comment"></label>
+                    <textarea class="form-control comment " placeholder="comment" id="description-note" name="comment">
+
+                </textarea>
+                </div>
+
+
+            </div>
+
+            <div class="modal-footer">
+                <!----- Upload  & Do Buttons -------->
+                <button class="btn DoButton" onclick="addProduct('note')">انجام</button>
+                <button class="btn Upload">آپلودفایل جزوه</button>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div id="modal_details_message" class="modal  modal_details_message animate__animated animate__fadeIn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content animate__animated animate__fadeInLeft">
+
+            <div class="modal-header">
+                <div>
+                    <button class="close_button" onclick="closeModal('modal_details_message')" id="close-messages-modal"><img class="close-image"
+                                                                                                     style="width: 45% ; height:auto"
+                                                                                                     src="Assets/IconClose.png">
+                        <img class="back-image" src="Assets/IconMobileBack.png">
+                        <p class="back">بازگشت</p></button>
+                    <div class="name_sailor title- ">
+                        <img class="flash" src="Assets/IconReply_White.png">  
+                        <span id="contact-name"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-body" id="send-message-modal" style="position: relative;">
+
+            </div>
+            <div class="modal-footer">
+                <textarea class=" form-control type_message" id="type-message" type="text" placeholder="بنویسید...">
+                </textarea>
+
+
+                <button class="send_button" type="button" onclick="sendMessage('message_in_document')"><img src="Assets/IconSend.png"></button>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+<script>
+    function goMainPage() {
+        window.location.assign('IntroductionPage.html');
+    }
+</script>
+<script src="js/const.js"></script>
+<script src="js/showCloseModal.js"></script>
+<script src="js/showProduct.js"></script>
+<script src="js/messageApi.js"></script>
+</body>
+</html>

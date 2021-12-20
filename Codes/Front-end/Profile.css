@@ -1,0 +1,1946 @@
+body {
+    color: #707070;
+}
+
+container-fluid {
+    padding: 1.5vw 2.6vw;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 1.5vw;
+    color: #FF9200;
+}
+
+.navbar-header .navbar-brand span {
+    margin-left: 2vw;
+}
+
+.navbar-header .navbar-brand {
+    margin-top: 1vw;
+}
+
+.avatar {
+    width: 70%;
+    height: 6vw;
+    background-color: #E3E3E3;
+    border: 0;
+    position: relative;
+    right: 10vw;
+    top: 0vw;
+
+}
+
+
+
+/***/
+.menu-document {
+    position: absolute;
+    top: 12vw;
+    width: 100%;
+}
+
+.Menu {
+    border-left: solid 1px #707070;
+    height: 100%;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.Main {
+    margin-top: 3vw;
+    position: relative;
+    align-items: center;
+}
+
+.Background_Avatar {
+    background-color: #FF9200;
+    border: 0;
+    border-radius: 50%;
+    width: 30%;
+    height:auto;
+    padding: 0.2vw 0.2vw;
+    position: absolute;
+    top: 2.7vw;
+    left: 35%;
+
+}
+
+.col-sm-3 {
+    padding: 0;
+}
+
+.Avatar_image {
+    width: 100%;
+    height: 100%;
+    padding: 1.5vw;
+}
+
+.Name_Email {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+.Name {
+    font-family: sahel;
+    font-size: 1.5vw;
+    margin:1vw 0 ;
+
+}
+
+.Email {
+    font-family: sahel;
+    font-size: 0.9vw;
+    text-align: center;
+    margin: 1vw 0;
+}
+
+.menu {
+    border: 0;
+    background-color: #E3E3E3;
+    font-family: sahel;
+    font-size: 1.1vw;
+    text-align: right;
+    margin:0.5vw 4vw ;
+    padding:0.5vw ;
+
+
+}
+
+.menu:hover {
+    color: #FF9200;
+}
+
+.modal_Edit .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 15% auto;
+    width: 35vw;
+    height: 28vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.close_button {
+    border-radius: 50%;
+    border: 0;
+    background-color: #d42424;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: -2vw;
+    right: 94%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+    background-color: #FF9200;
+    border: 0;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    margin: 1.3vw auto;
+}
+
+.modal {
+    z-index: 999999;
+}
+
+.modal-header {
+    padding: 0;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.form-group {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 0.6vw;
+}
+
+.btn_Edit {
+    position: absolute;
+    top: 22.7vw;
+    left: 30%;
+}
+
+.btn:hover{
+    border: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FF9200, #FC4A1A);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal_Restore .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 19% auto;
+    width: 35vw;
+    height: 20vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal_Restore .modal-header {
+    border: 0;
+    margin-bottom: 3vw;
+}
+
+.btn_Restore {
+    position: absolute;
+    top: 14vw;
+    left: 30%;
+}
+
+.modal_Message .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 12% auto;
+    width: 38vw;
+    height: 23vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.modal_Message .close_button {
+    border-radius: 50%;
+    border: 0;
+    background-color:#c02121;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: -2vw;
+    right: 94%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.modal_Message .modal-header {
+    border: 0;
+    border-top-right-radius: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.modal_Message .modal-body {
+    background-color: #E3E3E3;
+    overflow: auto;
+    height: 16vw;
+    border-radius: 1vw;
+
+}
+
+
+.title_message {
+    font-size: 2vw;
+    text-align: center;
+    color: #FF9200;
+    padding: 1vw 0.5vw;
+}
+
+.name_sailor {
+    font-size: 1.2vw;
+    font-family: sahel;
+    padding: 0.5vw 1.3vw;
+}
+
+.flash {
+    width: 10%;
+    height: auto;
+    padding: 0.5vw 1vw;
+
+}
+
+.content_message {
+    font-family: sahel;
+    font-size: 0.9vw;
+    padding: 0vw 2.3vw;
+}
+
+
+.title {
+    font-family: sahel;
+    font-size: 1.3vw;
+    margin-bottom: 2vw;
+    padding-top: 1vw;
+}
+
+.document_buy .panel {
+    border: 0;
+    border-radius: 0.5vw;
+    width: 100%;
+    height: auto;
+
+}
+
+.document_my .panel {
+    border: 0;
+    border-radius: 0.5vw;
+    width: 100%;
+    height: auto;
+
+}
+
+.panel:hover {
+    box-shadow: 10px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.panel-heading {
+    padding: 0;
+}
+
+/**** Image Notes ***/
+.document_buy .panel-heading .Note {
+    width: 70%;
+    height: auto;
+    padding: 0.9vw 1vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/***/
+.document_my .panel-heading .Book {
+    width: 70%;
+    height: auto;
+    padding: 0.9vw 1vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.document_buy .panel .panel-heading {
+    background-color: #FF9200;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    width: 10vw;
+    height: 8vw;
+    overflow: hidden;
+    padding: 0.3vw 0.3vw;
+}
+
+.document_my .panel .panel-heading {
+    background-color: #FF9200;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    width: 10vw;
+    height: 8vw;
+    overflow: hidden;
+    padding: 0.3vw 0.3vw;
+}
+
+
+.document_buy .panel .panel-footer {
+    border: 0;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    font-family: sahel;
+    font-size: 1.1vw;
+    padding: 1vw;
+    margin:0;
+    width: 10vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    direction: rtl;
+    display: inline-block;
+}
+
+.document_my .panel .panel-footer {
+    border: 0;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
+    font-family: sahel;
+    font-size: 1.1vw;
+    padding: 1vw;
+}
+
+.document_my .panel .panel-body {
+    border: 0;
+    background-color: #FFFFFF;
+    font-family: sahel;
+    font-size: 1.1vw;
+    margin: 0;
+    border-radius: 0;
+    padding: 1vw;
+    display: inline-block;
+    width: 10vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    direction: rtl;
+
+
+}
+
+/*** height of panel of documents ***/
+.Document {
+    height: 18.5vw;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+
+.Document::-webkit-scrollbar {
+	width: 8px;
+	background-color: #F5F5F5;
+}
+.Document::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #FF9200;
+}
+
+.Document::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.document_buy {
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin-left: 2vw;
+    display: inline;
+
+}
+
+.document_my {
+    width: 10vw;
+    height: 10vw;
+    float: right;
+    margin-left: 2vw;
+    margin-top: 1vw;
+    display: inline;
+
+}
+
+
+/*** height of panel of MyDocuments **/
+.My-Document {
+    margin-top: 1vw;
+    height: 22.5vw;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+
+.My-Document::-webkit-scrollbar {
+	width: 8px;
+	background-color: #F5F5F5;
+}
+.My-Document::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #FF9200;
+}
+
+.My-Document::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+
+.addFile {
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    right: -27vw;
+    top: 2.5vw;
+
+}
+
+.image-btn {
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+
+}
+
+.addBook {
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    right: -22.5vw;
+    top: 2.5vw;
+
+}
+
+
+.Price {
+    color: #FF9200;
+    font-family: lalezar;
+    font-size: 1.3vw;
+    position:relative;
+    right:-1.1vw;
+
+
+}
+
+.Toman {
+    color: #707070;
+    font-family: sahel;
+    position: relative;
+    left: -1vw;
+}
+.b-writer {
+    width: 21vw;
+    margin-right: 2vw;
+    height: 3.8vw;
+    padding: 0.7vw 2vw;
+    margin-bottom: 0vw;
+    margin-top:-0.5vw;
+    float: right;
+
+}
+
+.sentence {
+    color: #707070;
+    font-family: sahel;
+    font-size: 0.8vw;
+    padding-bottom: 1vw;
+}
+
+.Edit_Delete {
+    opacity: 0;
+    width: 10vw;
+    height: 11vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    position: relative;
+    right: -0.3vw;
+    top: -9vw;
+
+
+}
+.Edit-Delete {
+    opacity: 0;
+    width: 10vw;
+    height: 11vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    position: relative;
+    right: -0.3vw;
+    top: -8.3vw;
+}
+
+.delete_icon {
+    width: 16%;
+    height: auto;
+    float: left;
+    background-position: center;
+    position: relative;
+    top: 3.8vw;
+    right: -2.5vw;
+    display: table;
+    margin: 0 auto;
+}
+
+.Edit_icon {
+    width: 30%;
+    height: auto;
+    float: left;
+    background-position: center;
+    position: relative;
+    top: 3.8vw;
+    right: -4vw;
+    display: table;
+    margin: 0 auto;
+}
+
+/*** Image - Note **/
+.image-Note {
+    width: 9.8vw;
+    height: 7.8vw;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    padding-bottom: 0.4vw;
+
+}
+
+/*** Image-document ***/
+.image-document {
+    width: 9.8vw;
+    height: 7.8vw;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    padding-bottom: 0.4vw;
+
+}
+
+.modal_MakeNote .modal-content {
+    width: 42vw;
+    height: 38.7vw;
+    margin: 5vw auto;
+    border-radius: 1vw;
+    background-color: #E3E3E3;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.modal_MakeNote .modal-body {
+    padding: 0 1vw;
+}
+
+.modal_MakeNote .modal-header {
+    background-color: #FF9200;
+    border-top-right-radius: 1vw;
+}
+
+.modal_MakeNote .modal-header p {
+    font-size: 1.2vw;
+    font-family: sahel;
+    color: #FFFFFF;
+    padding: 1.1vw 2vw;
+    margin: auto 0;
+}
+
+.Add-Note {
+    float: right;
+    padding-right: 0.2vw;
+
+}
+
+.AddNote {
+    width: 8.8vw;
+    height: 10vw;
+    border-radius: 0.5vw;
+    border: 2px solid #FF9200;
+    margin: 0.5vw 0.2vw;
+
+}
+
+.AddingFile-Note {
+    background-color: #E3E3E3;
+    width: 8.8vw;
+    height: 10vw;
+    border-radius: 0.5vw;
+    border: 2px dashed #FF9200;
+    margin: 0.5vw 0.2vw;
+    font-size: 1.2vw;
+}
+
+.AddingFile-Note img {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.n-title {
+    width: 21vw;
+    margin-right: 2vw;
+    height: 3.8vw;
+    padding: 0.7vw 2vw;
+    margin-bottom: 0.3vw;
+    margin-top: 1.5vw;
+    float: right;
+
+}
+
+.price {
+    width: 10vw;
+    display: inline;
+    height: 3.8vw;
+    margin-top: -4.6vw;
+    float: right;
+    margin-right: 24vw;
+    padding: 0.7vw 2vw;
+    margin-bottom: 0.3vw;
+
+}
+
+
+.modal_MakeNote .modal-body .toman {
+    color: #707070;
+    font-family: sahel;
+    font-size: 1.5vw;
+    position: relative;
+    top: -4.3vw;
+    right: 34vw;
+}
+
+.modal_MakeNote .modal-body .comment {
+
+    border-radius: 0.8vw;
+    color: #707070;
+    font-family: sahel;
+    font-size: 1.1vw;
+    margin-top: -4.1vw;
+    margin-right: 0.5vw;
+    width: 97%;
+
+}
+.modal_MakeBook .modal-body .comment {
+
+    border-radius: 0.8vw;
+    color: #707070;
+    font-family: sahel;
+    font-size: 1.1vw;
+    margin-top: -3.1vw;
+    margin-right: 0.5vw;
+    width: 97%;
+
+}
+
+textarea.form-control {
+    height: 9vw;
+}
+
+.modal_MakeNote .DoButton {
+    position: absolute;
+    right: 27%;
+    font-family: sahel;
+    font-size: 1.1vw;
+    top: 33.7vw;
+    left: -10.2vw;
+
+
+}
+
+.DoButton:hover{
+    border: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FF9200, #FC4A1A);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.Upload {
+    position: absolute;
+    background: linear-gradient(to right, #37B64C, #22FF00);
+    left: 21.5vw;
+    top: 33.7vw;
+    left: 23vw;
+    font-family: sahel;
+    font-size: 1.1vw;
+
+}
+
+.Upload:hover{
+    border: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #22FF00, #37B64C);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+/********* Modal for book*********/
+.modal_MakeBook .modal-content {
+    width: 42vw;
+    height:43vw;
+    margin: 2.5vw auto;
+    border-radius: 1vw;
+    background-color: #E3E3E3;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+/*** height of adding book ***/
+.modal_MakeBook .modal-content .modal-body .Adding-Note {
+    height:13vw;
+    overflow-y: auto;
+    margin-top: 0.3vw;
+}
+/*** height of adding note ***/
+.modal_MakeNote .modal-content .modal-body .Adding-Note {
+    height:13vw;
+    overflow-y: auto;
+}
+
+.modal_MakeBook .modal-body {
+    padding: 0 1vw;
+}
+
+.modal_MakeBook .modal-header {
+    background-color: #FF9200;
+    color: #707070;
+    border-top-right-radius: 1vw;
+}
+
+.modal_MakeBook .modal-header p {
+    font-size: 1.2vw;
+    font-family: sahel;
+    color: #FFFFFF;
+    padding: 1.1vw 2vw;
+    margin: auto 0;
+}
+
+.b-title {
+    width: 21vw;
+    margin-right: 2vw;
+    height: 3.8vw;
+    padding: 0.7vw 2vw;
+    margin-bottom: 0vw;
+    margin-top:1.2vw;
+    float: right;
+
+}
+
+.b-price {
+    width: 10vw;
+    display: inline;
+    height: 3.8vw;
+    margin-top: -4.4vw;
+    float: right;
+    margin-right: 24vw;
+    padding: 0.7vw 2vw;
+    margin-bottom: 0vw;
+
+}
+
+.modal_MakeBook .modal-body .toman {
+    color: #707070;
+    font-family: sahel;
+    font-size: 1.5vw;
+    position: relative;
+    top: -8vw;
+    right: 34vw;
+
+}
+
+.modal_MakeBook .DoButton {
+    position: absolute;
+    right: 30%;
+    font-family: sahel;
+    font-size: 1.1vw;
+    top: 38.6vw;
+    margin: 0;
+}
+
+/*** css styles for details message ******/
+.modal_details_message .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 12% auto;
+    width: 38vw;
+    height: 23vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.modal_details_message .close_button {
+    border-radius: 50%;
+    border: 0;
+    background-color: #d42424;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: -2vw;
+    right: 94%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.modal_details_message .modal-header {
+    border: 0;
+    border-top-right-radius: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.modal_details_message .modal-body {
+    background-color: #E3E3E3;
+    overflow: auto;
+    height: 16vw;
+    border-radius: 1vw;
+
+}
+
+
+
+.modal_details_message .modal-body {
+
+    background-color: #E3E3E3;
+    overflow: auto;
+    width: 38vw;
+    height: 13.5vw;
+    padding: 0;
+
+}
+
+.modal_details_message .send_button img {
+    width: 60%;
+    height: auto
+}
+
+.modal_details_message .send_button {
+    border: 0;
+    border-radius: 50%;
+    background: linear-gradient(to right, #FF9200, #FC4A1A);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    width: 3.6vw;
+    height: 3.6vw;
+    position: absolute;
+    top: 18.5vw;
+    right: 1vw;
+}
+
+.modal_details_message .modal-header .name_sailor {
+    color: #FFFFFF;
+    font-family: sahel;
+    font-size: 1.1vw;
+    padding: 0.7vw 0;
+}
+
+.modal_details_message .modal-header {
+    background-color: #FF9200;
+}
+.modal_details_message .type_message {
+    border: 0;
+    border-radius: 2vw;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    width: 82%;
+    height: 3.5vw;
+    position: absolute;
+    top: 18.5vw;
+    left: 1.1vw;
+    padding:0.8vw 1.2vw;
+    font-family: sahel;
+    font-size: 1.1vw;
+    color: #707070;
+
+}
+
+/*** style for div that user send message *****/
+
+.send_text_message {
+    max-width: 19vw;
+    height: auto;
+    background-color: #FAFFB4;
+    color: #707070;
+    border: 0;
+    border-radius: 1.5vw 0vw 1.5vw 0.9vw;
+    font-size: 0.9vw;
+    font-family: sahel;
+    padding: 0.5vw 0.6vw;
+    margin-bottom: 0.3vw;
+    position: relative;
+}
+
+/******* Style for div that user recive message ********/
+
+.Recive_message {
+    max-width: 19vw;
+    height: auto;
+    background-color: #AFFDFF;
+    color: #707070;
+    border: 0;
+    border-radius: 0vw 1vw 1vw 0.9vw;
+    font-size: 0.9vw;
+    font-family: sahel;
+    padding: 0.5vw 0.6vw;
+    margin-bottom: 0.3vw;
+    position: relative;
+    left: -17.3vw;
+
+}
+
+/*************** open modal -----------*/
+.modal-open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-backdrop.in {
+    opacity: 0;
+}
+
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+
+}
+
+/** menu icon */
+.menu-picture {
+    display: none;
+}
+
+/*** part of documents **/
+.partOfDocuments {
+    margin-top: 2vw;
+    padding-right: 3vw;
+
+}
+
+/** university **/
+.university {
+    display: none;
+}
+
+.Header {
+    margin: 0vw 3vw;
+    padding: 0.5vw 1vw;
+    width: 94%;
+    height: 7.5vw;
+}
+
+.closeBtn {
+    display: none;
+}
+
+.form {
+    margin-top: 2.5vw;
+}
+
+/*** For back part ***/
+.back {
+    display: none;
+}
+
+.back-image {
+    display: none;
+}
+
+.title-m {
+    display: none;
+}
+
+.document-982:hover .Edit-Delete{
+    opacity: 1;
+}
+
+.document-982:hover .Edit_Delete{
+    opacity: 1;
+}
+
+
+/******* For Mobile *************/
+@media screen and (max-width: 767px) {
+    header {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-picture {
+        display: block;
+        position: absolute;
+        top: 5.5vw;
+        right: 8vw;
+        width: 9.2vw;
+        height: 6.2vw;
+    }
+
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11,
+    .col-lg-12, .col-lg-2, .col-lg-3,
+    .col-lg-4, .col-lg-5,
+    .col-lg-6, .col-lg-7,
+    .col-lg-8, .col-lg-9,
+    .col-md-1, .col-md-10,
+    .col-md-11, .col-md-12,
+    .col-md-2, .col-md-3,
+    .col-md-4, .col-md-5, .col-md-6,
+    .col-md-7, .col-md-8, .col-md-9, .col-sm-1,
+    .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2,
+    .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6,
+    .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1,
+    .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2,
+    .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+    .col-xs-7, .col-xs-8, .col-xs-9 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .partOfDocuments {
+        border: 0;
+        margin-top: 12vw;
+
+
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    .University {
+        display: none;
+    }
+
+    .navbar-header {
+        background-color: #FF9200;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 17vw;
+        margin: 0;
+        padding: 0;
+        z-index: 10000;
+
+    }
+
+    .university {
+        display: inline-block;
+        position: absolute;
+        top: 4.5vw;
+        right: 24vw;
+        color: #FFFFFF;
+        font-size: 5.7vw;
+    }
+
+    .Header {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .title {
+        font-family: sahel;
+        font-size: 4.7vw;
+        margin-bottom: 4vw;
+        padding-top: 0vw;
+        padding-right: 3vw;
+    }
+
+    .document_buy {
+        width: 41vw;
+        height: 20vw;
+        float: right;
+        margin-left: 6vw;
+        display: inline;
+        margin-top: 5vw;
+
+    }
+
+    .document_buy .panel {
+        border-radius: 1.5vw;
+    }
+
+    /*** height of panel of documents ***/
+    .Document {
+        height:60vw; /***/
+        position: relative;
+        white-space: nowrap;
+        display: flex;
+    }
+
+    /**** Image Notes ***/
+    .document_buy .panel-heading .Note {
+        width: 50%;
+        height: auto;
+        padding: 0.9vw 1vw;
+        overflow: hidden;
+        margin-top: 2.5vw;
+    }
+
+    .document_buy .panel .panel-heading {
+        background-color: #FF9200;
+        border-top-left-radius: 1.5vw;
+        border-top-right-radius: 1.5vw;
+        width: 41vw;
+        height: 30vw;
+        overflow: hidden;
+        padding: 0.7vw 0.7vw;
+    }
+
+    .image-Note {
+        width: 40vw;
+        height: 29vw;
+        border-top-left-radius: 1.5vw;
+        border-top-right-radius: 1.5vw;
+        padding-bottom: 0.4vw;
+
+    }
+
+    .document_buy .panel .panel-footer {
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        font-size: 4.5vw;
+        padding: 3vw 1vw;
+        width: 34vw;
+    }
+
+    .Documents {
+        margin-bottom: 0;
+        padding:2vw ;
+    }
+
+    .My_Documents {
+        margin-bottom:0vw;
+        margin-top: 10vw;
+        padding: 2vw;
+    }
+
+    /*** height of panel of MyDocuments **/
+    .My-Document {
+        margin-top: 1vw;
+        height:67vw;
+        position: relative;
+        white-space: nowrap;
+        display: flex;
+
+    }
+
+    .document_my {
+        width: 41vw;
+        height: 10vw;
+        float: right;
+        margin-left: 6vw;
+        margin-top: 1vw;
+        display: inline;
+
+    }
+
+    .document_my .panel .panel-heading {
+        border-top-left-radius: 1.5vw;
+        border-top-right-radius: 1.5vw;
+        width: 41vw;
+        height: 30vw;
+        overflow: hidden;
+        padding: 0.7vw 0.7vw;
+    }
+
+    .document_my .panel {
+        border-radius: 1.5vw;
+    }
+
+    .document_my .panel .panel-body {
+        font-size: 4.5vw;
+        margin: 0;
+        border-radius: 0;
+        padding: 3vw 1vw;
+        display: inline-block;
+        width: 34vw;
+
+    }
+
+    .document_my .panel .panel-footer {
+        background-color: #FFFFFF;
+        border-bottom-left-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+        padding: 3vw 1vw;
+    }
+
+    .Price {
+        right: -6vw;
+        font-size: 5.5vw;
+    }
+
+    .Toman {
+        left: -5vw;
+        font-size: 4.5vw;
+    }
+
+    .document_my .panel-heading .Book {
+        width: 50%;
+        height: auto;
+        padding: 0.9vw 1vw;
+        margin-top: 2.5vw;
+        overflow: hidden;
+    }
+
+    .image-document {
+        width: 40vw;
+        height: 29vw;
+        border-top-left-radius: 1.5vw;
+        border-top-right-radius: 1.5vw;
+        padding-bottom: 0.4vw;
+
+    }
+
+    /** Add File (session my documents)**/
+    .addFile {
+        width: 10%;
+        height: 10%;
+        border-radius: 50%;
+        padding: 0;
+        position: relative;
+        right: -19vw;
+        top: 8.5vw;
+
+    }
+
+    .image-btn {
+        width: 100%;
+        height: 100%;
+        padding: 2.5vw;
+
+    }
+
+    .addBook {
+        width: 10%;
+        height: 10%;
+        border-radius: 50%;
+        padding: 0;
+        position: relative;
+        right: -2.5vw;
+        top: 8.5vw;
+    }
+
+    .sentence {
+        font-size: 3.5vw;
+        margin-bottom: 3vw;
+        margin-top: 9vw;
+        padding: 3vw;
+    }
+
+    /*** For SideNav ***/
+
+
+    .sideNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 100000;
+        top: 0;
+        right: 0;
+        background-color: #FF9200;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+
+    }
+
+    .sideNav .closeBtn {
+        position: absolute;
+        top: 6vw;
+        right: 6vw;
+        font-size: 3.6vw;
+        font-family: sahel;
+        margin-left: 5vw;
+        color: white;
+        display: inline-block;
+    }
+
+    .sideNav .close-btn {
+        width: 11vw;
+        height: auto;
+        padding: 0 3.1vw;
+    }
+
+    .menu-document {
+        position: absolute;
+        top: 60vw;
+        right: 4vw;
+        width: 69vw;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sideNav {
+            padding-top: 15px;
+        }
+
+        .sideNav a {
+            font-size: 18px;
+        }
+
+    }
+
+    .Background_Avatar {
+        background-color: #FF9200;
+        border: 0;
+        width: 40%;
+        height: auto;
+        position:absolute;
+        left: 21vw;
+        padding: 1vw 1vw;
+        top: 25vw;
+
+
+    }
+
+    .Name_Email {
+        position: relative;
+        text-align: center;
+        margin-bottom:12vw;
+    }
+
+    .Avatar_image {
+        width: 100%;
+        height: 100%;
+        padding: 1.5vw;
+    }
+
+    .Name {
+        font-size: 4.8vw;
+        text-align: center;
+        margin-top: 3vw;
+        color: #FFFFFF;
+
+    }
+
+    .Email {
+        font-size: 4.5vw;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 2vw;
+
+    }
+
+    .Main {
+        margin-top:15vw;
+    }
+
+    .menu {
+
+        border: 0;
+        background-color: #FF9200;
+        font-size: 4.7vw;
+        padding: 1vw 0.5vw;
+        text-align: right;
+        margin-right: 4vw;
+        color: #FFFFFF;
+        margin-bottom: 2.5vw;
+
+
+    }
+
+    .menu:hover {
+        color: #FFFFFF;
+        border: 0;
+    }
+
+    /*** Modals ***/
+    /*** ویرایش مشخصات ***/
+    .modal_Edit {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal_Edit .modal-content {
+        border: 0;
+        background-color: #E3E3E3;
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+    }
+
+    .modal_Edit .modal-dialog {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*** image ***/
+    .image {
+        width: 28%;
+        height: 28%;
+        padding: 4vw;
+        margin-top: 10vw;
+        margin-bottom: 7vw;
+    }
+
+    .form-group {
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 2vw;
+
+    }
+
+    .form-control {
+        height: 14vw;
+    }
+
+    .form-group .form-control {
+        font-size: 4.2vw;
+        padding: 6vw;
+        border-radius: 10vw;
+
+    }
+
+    .btn_Edit {
+        position: static;
+        top: 0;
+        left: 30%;
+        margin-top: 7vw;
+    }
+
+    .btn {
+        font-size: 3.8vw;
+        border-radius: 10vw;
+    }
+
+
+    /*** پیامها ***/
+    .modal_Message .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .modal_Message .modal-content .modal-body {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .modal-dialog {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .modal_Message .modal-content .modal-body {
+        height: 80%;
+        width: 100%;
+        padding: 0 1vw;
+    }
+
+
+    /*** تغییر رمز عبور ***/
+    .modal_Restore .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .modal-header {
+        background-color: #FF9200;
+        height: 19vw;
+    }
+
+    .form {
+        margin-top: 17vw;
+    }
+
+    .btn_Restore {
+        position: static;
+        margin-top: 7vw;
+    }
+
+    .close-image {
+        display: none;
+    }
+
+    .back {
+        display: block;
+        position: relative;
+        left: 22vw;
+        top: 3.5vw;
+        color: #FFFFFF;
+        font-size: 4.3vw;
+        font-family: sahel;
+    }
+
+    .back-image {
+        display: block;
+        width: 2.6vw;
+        height: auto;
+        position: relative;
+        top: 9vw;
+        left: 3vw;
+    }
+
+    .modal_Restore .close_button {
+        background-color: #FF9200;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .modal_Edit .close_button {
+        background-color: #FF9200;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .modal_Message .close_button {
+        background-color: #FF9200;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .modal_MakeNote .close_button {
+        background-color: #FF9200;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+
+    .modal_MakeBook .close_button {
+        background-color: #FF9200;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+    .modal_details_message .close_button {
+        background-color: #FF9200;
+        border-radius: 0;
+        box-shadow: none;
+
+    }
+
+
+    /*** messages ***/
+    .title- {
+        color: #FFFFFF;
+        font-family: sahel;
+        font-size: 4.3vw;
+        margin-top: 5vw;
+        text-align: right;
+        margin-right: 5vw;
+
+    }
+
+    .title-m {
+        display: block;
+    }
+
+    .modal-footer {
+        padding: 0;
+    }
+
+
+    .name_sailor {
+        font-size: 4.7vw;
+        margin-right: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .content_message {
+        font-size: 3.5vw;
+        margin-right: 4vw;
+        margin-bottom: 3.5vw;
+    }
+    .modal_MakeNote .modal-body .comment {
+        font-size: 3.5vw;
+    }
+
+    .flash {
+        width: 14%;
+        padding: 0.5vw 4vw;
+    }
+
+    .modal_Message .modal-header {
+        margin-bottom: 4vw;
+    }
+
+    /*** for modal add note & book ***/
+    .modal_MakeNote .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        box-shadow: none;
+        border: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .modal_MakeNote, .modal_MakeBook{
+        padding-right: 0;
+
+    }
+    .Add-Note {
+        padding-right: 0vw;
+
+    }
+
+    .modal_MakeNote .modal-content .modal-header p {
+        display: block;
+        left: 24vw;
+        top: 2.9vw;
+        color: #FFFFFF;
+        font-size: 4.3vw;
+        font-family: sahel;
+
+    }
+
+    .modal_MakeNote .modal-content .modal-header .add-m {
+        text-align: right;
+        margin-right: 5vw;
+        margin-top: 5.1vw
+    }
+
+    .AddNote {
+        width: 22vw;
+        height: 31vw;
+        margin: 3vw 1vw;
+        border-radius: 1.5vw;
+    }
+
+    .AddingFile-Note {
+        width: 22vw;
+        height: 31vw;
+        margin: 3vw 1vw;
+        border-radius: 1.5vw;
+        font-size: 3vw;
+    }
+
+    .n-title {
+        width: 100%;
+        height: 2.5vw;
+        margin-right: 6vw;
+    }
+
+    .price {
+        width: 80%;
+        height: 2.5vw;
+        margin-right: 7vw;
+        margin-top: 1vw;
+    }
+
+    .modal_MakeNote .modal-body .toman {
+        top: -12vw;
+        right: 78vw;
+        font-size: 5vw;
+    }
+
+    textarea.form-control {
+        height: 65vw;
+        border-radius: 1.5vw;
+
+    }
+
+    .comment {
+        margin-top: -10vw;
+        margin-right: 1.1vw;
+        font-size: 3.5vw;
+    }
+
+    .modal_MakeNote .DoButton {
+        position: static;
+        margin-top: 3.3vw;
+        font-size: 3.8vw;
+        margin-left: 5vw;
+    }
+
+    .Upload {
+        position: static;
+        margin-top: -10.1vw;
+        margin-right: 3.5vw;
+    }
+
+    .modal-footer {
+        background-color: #E3E3E3;
+    }
+
+    /*** add book ***/
+    .modal_MakeBook .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        box-shadow: none;
+        border: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .modal_MakeBook .modal-content .modal-header p {
+        display: block;
+        left: 24vw;
+        top: 2.9vw;
+        color: #FFFFFF;
+        font-size: 4.3vw;
+        font-family: sahel;
+    }
+    .modal_MakeBook .modal-content .modal-body .Adding-Note {
+        height: auto;
+    }
+    .modal_MakeNote .modal-content .modal-body .Adding-Note {
+        height: auto;
+    }
+
+    .modal_MakeBook .modal-content .modal-header .add-m {
+        text-align: right;
+        margin-right: 5vw;
+        margin-top: 5.1vw
+    }
+
+    .b-title {
+        width: 100%;
+        height: 2.5vw;
+        margin-right: 6.1vw;
+    }
+
+    .b-writer {
+        width: 80%;
+        height: 2.5vw;
+        margin-right: 6.1vw;
+    }
+
+    .b-price {
+        width: 80%;
+        height: 2.5vw;
+        margin-right: 7.1vw;
+        margin-top: 1vw;
+    }
+
+    .modal_MakeBook .modal-body .toman {
+        top: -26vw;
+        right: 78vw;
+        font-size: 5vw;
+    }
+
+    .modal_MakeBook .modal-body .comments .comment {
+        margin-top: -10vw;
+        margin-right: 1.1vw;
+        font-size: 3.5vw;
+        position: static;
+    }
+
+    .modal_MakeBook .DoButton {
+        position: static;
+        margin-top: 3.3vw;
+        font-size: 3.8vw;
+        margin-left: 0;
+        margin-right: 30vw;
+    }
+
+    /*** Delete & Edit document ***/
+    .Edit_Delete {
+        top: -30vw;
+        right: -0.6vw;
+        width: 41vw;
+        height: 41vw;
+    }
+    .modal-body {
+        background-color: #E3E3E3;
+    }
+
+    .Edit-Delete {
+        top: -25.5vw;
+        right: -0.6vw;
+        width: 41vw;
+        height: 41vw;
+    }
+    .delete_icon {
+        top: 8.8vw;
+        right: -10vw;
+
+    }
+
+    .Edit_icon {
+        top: 7.8vw;
+        right: -13vw;
+    }
+
+    /*** send message ***/
+    .modal_details_message .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .modal_details_message .modal-header .name_sailor {
+        font-size: 4.3vw;
+    }
+    .modal_details_message .modal-content .modal-body {
+        height: 75%;
+        width: 100%;
+        padding: 0vw 1vw;
+        margin-top: 2.5vw;
+    }
+    .modal_details_message .type_message {
+        top: 88%;
+        border-radius: 9vw;
+        left: 4.5vw;
+        height: 14vw;
+        width: 75%;
+    }
+    .modal_details_message .type_message {
+        font-size: 4.1vw;
+        padding: 3vw 2vw;
+    }
+    .modal_details_message .send_button {
+        right: 4vw;
+        top: 88%;
+        width: 14vw;
+        height: 14vw;
+    }
+    /*** typing message ***/
+    .send_text_message {
+        max-width: 90vw;
+        height: auto;
+        border-radius: 5vw 0vw 5vw 5vw !important;
+        font-size: 4.1vw;
+        padding: 2vw;
+    }
+    /******* Style for div that user recive message ********/
+
+    .Recive_message {
+        max-width:50vw;
+        height: auto;
+        border-radius: 0vw 5vw 7vw 7vw;
+        font-size:4.1vw;
+        left: -48vw;
+
+    }
+
+    .Menu {
+        border-left:none;
+        height: 100%;
+        position: absolute;
+        margin-top:0 ;
+    }
+
+
+
+
+
+
+}
+
+
+
+

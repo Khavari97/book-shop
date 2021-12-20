@@ -1,0 +1,36 @@
+@font-face {
+    font-family: lalezar;
+    src: url("fonts/Font-lalezar.ttf");
+}
+
+@font-face {
+    font-family: sahel;
+    src: url("fonts/Font-sahel.ttf");
+}
+body{
+    font-family: lalezar;
+
+
+}
+/**********Buttons************************/
+.btn{
+    font-family: sahel;
+    font-size: 1.2vw;
+
+}
+/********Forms**************************/
+ .form-group .form-control{
+    font-family: sahel;
+    font-size: 1.2vw;
+
+}
+ /********* for mobile ******/
+@media screen and (max-width: 767px){
+    .btn{
+       font-family: sahel;
+        font-size: 3.3vw;
+
+
+    }
+
+}

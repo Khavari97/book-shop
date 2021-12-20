@@ -1,0 +1,214 @@
+header {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+.navbar-header .navbar-brand {
+    font-size: 1.7vw;
+    color: #FF9200;
+    padding-right: 2vw;
+
+
+}
+
+.navbar-header .navbar-brand span {
+    margin-left: 2.6vw;
+}
+
+.logo {
+    width: 22%;
+    height: auto;
+}
+
+/**********/
+.title-register {
+    font-size: 3vw;
+    color: #FF9200;
+    border: 0;
+    margin: 0 auto;
+    padding-bottom: 2vw;
+    display: none;
+
+}
+
+.title-login {
+    display: none;
+}
+
+
+.title {
+    display: table;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 0.7vw;
+}
+
+.form-group-lg .form-control {
+    border-radius: 6vw;
+    padding: 2vw 2vw;
+    width: 60%;
+    margin: 0 auto;
+    height: 4.5vw;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -woz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+
+.btn:hover{
+    border: 0;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FF9200, #FC4A1A);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+/*** IconRegister ***/
+.IconRegister {
+    width:27%;
+    height: auto;
+    margin-right: 22vw;
+    margin-top: 4vw;
+}
+
+.background-IconRegister {
+    background-color: #FF9200;
+    border-bottom-right-radius:0 ;
+    border-top-right-radius:0 ;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    position: absolute;
+    right:0vw;
+    width:42vw;
+    height:18vw;
+    top: 1.3vw;
+
+}
+
+.register {
+    position:absolute;
+    right: 7vw;
+    top: 6vw;
+    color: #FFFFFF;
+    font-size: 3.5vw;
+}
+.Login_link{
+    color: blue;
+    font-family: sahel;
+    margin-right: 14vw;
+    font-size:1.2vw;
+    position: relative;
+    top: 1vw;
+}
+
+.Login_link :hover , .Login_link:focus ,Login_link :visited {
+    color: blue;
+}
+
+
+
+
+/************ css styles for mobile Ui **************/
+
+@media screen and (max-width: 767px) {
+
+    .navbar-brand {
+        position: absolute;
+        right: 4vw;
+
+    }
+
+    .logo {
+        width: 12.5vw;
+        height: auto;
+        padding-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .navbar-header .navbar-brand {
+        font-size: 4.5vw;
+    }
+
+    header {
+        margin-bottom: 15vw;
+    }
+
+    .title-register {
+        font-size: 4.5vw;
+        color: #FF9200;
+        border-bottom: solid 1vw #FF9200;
+        padding-bottom: 0;
+        display: block;
+
+    }
+
+    .title-login {
+        font-size: 4.5vw;
+        color:#A8A8A8;
+        border-bottom: solid 1vw #A8A8A8;
+        display: block;
+
+    }
+
+    .title {
+        display: table;
+        margin: 0 auto;
+        padding-bottom: 4vw;
+
+    }
+
+    .register-form {
+        margin-top: 10vw;
+    }
+
+    .form-group {
+        margin-bottom: 2vw;
+    }
+
+
+    .form-group .form-control {
+        font-size: 2.5vw;
+        padding: 3vw 5vw;
+        width: 78%;
+        margin: 0 auto;
+    }
+
+    .form-group-lg .form-control {
+        height: 12vw;
+    }
+
+    .btn {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+
+    }
+
+    a , a:focus{
+        text-decoration: none;
+        color: #A8A8A8;
+    }
+
+    a:hover {
+        color:  #707070;
+        text-decoration: none;
+    }
+
+
+    .login {
+        display: none;
+    }
+
+    .Login_link {
+        display: none;
+    }
+
+
+}

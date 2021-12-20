@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #E3E3E3;
+}
+img{
+    width: 100%;
+}
+.modal {
+    background: rgba(0,0,0,0.3);
+}
+/*** UnSeccessful Message***/
+.modal_UnSeccessfulMessage .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 17% auto;
+    width: 35vw;
+    height: 20vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.modal_UnSeccessfulMessage .modal-content .modal-body {
+    margin-top: 1.5vw;
+    padding: 0;
+}
+.modal_UnSeccessfulMessage .modal-content .modal-header {
+    padding: 0;
+    border: 0;
+}
+.Unseccessful {
+    width: 12vw;
+    height: 12vw;
+    margin: 0 auto;
+
+}
+.unseccessful {
+    width: 100%;
+    height: 100%;
+}
+.modal_UnSeccessfulMessage .modal-content .modal-footer , .modal_SeccessfulMessage .modal-content .modal-footer{
+    padding: 1vw;
+}
+.problem {
+    margin: 0 auto;
+    font-family: sahel;
+    font-size: 1.2vw;
+    color: #707070;
+    display: table;
+}
+
+/** Seccessful Message*/
+
+.modal_SeccessfulMessage .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 17% auto;
+    width: 35vw;
+    height: 20vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.modal_SeccessfulMessage .modal-content .modal-body {
+    margin-top:1.5vw;
+    padding: 0;
+}
+.modal_SeccessfulMessage .modal-content .modal-header {
+    padding: 0;
+    border: 0;
+}
+.Seccessful {
+    width: 12vw;
+    height: 12vw;
+    margin: 0 auto;
+}
+.seccessful {
+    width: 100%;
+    height: 100%;
+}
+
+/*** close_button ***/
+.modal_UnSeccessfulMessage .modal-content .modal-header .close_button , .modal_SeccessfulMessage .modal-content .modal-header .close_button {
+    border-radius: 50%;
+    border: 0;
+    background-color: #d42424;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: -2vw;
+    right: 94%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal_UnSeccessfulMessage .modal-content .modal-header .image,.modal_SeccessfulMessage .modal-content .modal-header .image {
+    background-color: #FF9200;
+    border: 0;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+
+
+}
+/*** Delete Document ***/
+.modal_DeleteDocuments .modal-content {
+    border: 0;
+    background-color: #E3E3E3;
+    border-radius: 1vw;
+    margin: 17% auto;
+    width: 35vw;
+    height: 23vw;
+    position: relative;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.modal_DeleteDocuments .modal-content .modal-body {
+    margin-top: 1.5vw;
+    padding: 0;
+}
+.modal_DeleteDocuments .modal-content .modal-header {
+    padding: 0;
+    border: 0;
+}
+.Delete {
+    width: 12vw;
+    height: 12vw;
+    margin: 0 auto;
+
+}
+.delete {
+    width: 100%;
+    height: 100%;
+}
+.modal_DeleteDocuments .modal-content .modal-footer{
+    padding: 1vw;
+}
+.modal_DeleteDocuments .modal-content .modal-header .close_button {
+    border-radius: 50%;
+    border: 0;
+    background-color: #d42424;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: -2vw;
+    right: 94%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal_DeleteDocuments .modal-content .modal-header .image{
+    background-color: #FF9200;
+    border: 0;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    margin: 0 auto;
+
+
+}
+.confirmation {
+    border: 0;
+    border-radius: 4.5vw;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    width: 13vw;
+    height: auto;
+    text-align: center;
+    padding: 0.6vw 3vw;
+    align-items: center;
+    font-family: sahel;
+    font-size: 1.2vw;
+    margin: 1vw 30%;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FC4A1A, #FF9200);
+}
+.confirmation:hover , .confirmation:focus {
+    background: linear-gradient(to right, #FF9200,#FC4A1A);
+
+}
+
+    /***************Buttons********************/
+.btn {
+    border: 0px;
+    border-radius: 4.5vw;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #FC4A1A, #FF9200);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    width: 15vw;
+    height: auto;
+    text-align: center;
+    padding: 1vw 3vw;
+
+}
+
+.btn {
+    margin: 0 auto;
+    display: table;
+}
+
+.btn:focus {
+    color: black;
+    background:#E3E3E3 ;
+    border-color: #A8A8A8;
+}
+
+
+/**************Forms**********************/
+.form-group .form-control {
+    border-radius: 6vw;
+    padding: 1.7vw 1.7vw;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*******************Text area******************************/
+textarea {
+    resize: none;
+}
+
+/**** for mobile ********/
+@media screen and (max-width: 767px){
+
+    body {
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+    }
+    .btn{
+        border: 0px;
+        border-radius: 4.5vw;
+        color: #FFFFFF;
+        background: linear-gradient(to right, #FC4A1A, #FF9200);
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        width: 40vw;
+        height: auto;
+        text-align: center;
+        padding:2.5vw 4vw;
+
+
+    }
+    /*** UnSeccessful Message***/
+    .modal_UnSeccessfulMessage .modal-content {
+        border: 0;
+        background-color: #E3E3E3;
+        border-radius: 5vw;
+        margin: 35% auto;
+        width: 65vw;
+        height: 45vw;
+        position: relative;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+    }
+    .modal_UnSeccessfulMessage .modal-content .modal-header {
+        background-color: #E3E3E3;
+        height: 3vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        padding: 2vw;
+    }
+
+    .modal_UnSeccessfulMessage .modal-content .modal-body {
+        margin-top: 1.5vw;
+    }
+    .Unseccessful {
+        width: 25vw;
+        height: 25vw;
+        margin: 0 auto;
+
+    }
+    .unseccessful {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal_UnSeccessfulMessage .modal-content .modal-header .close_button ,.modal_SeccessfulMessage .modal-content .modal-header .close_button{
+        width: 8vw;
+        height: 8vw;
+        top: -3.5vw;
+    }
+    .modal_UnSeccessfulMessage .modal-content .modal-header .close-image {
+        display: block;
+        margin: 0 auto;
+    }
+    .modal_UnSeccessfulMessage .modal-content .modal-footer , .modal_SeccessfulMessage .modal-content .modal-footer {
+        padding: 1vw;
+    }
+    /*** Seccessful Message***/
+    .modal_SeccessfulMessage .modal-content {
+        border: 0;
+        background-color: #E3E3E3;
+        border-radius: 5vw;
+        margin: 35% auto;
+        width: 65vw;
+        height: 45vw;
+        position: relative;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+    }
+    .modal_SeccessfulMessage .modal-content .modal-header {
+        background-color: #E3E3E3;
+        height: 3vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        padding: 2vw;
+    }
+
+    .modal_SeccessfulMessage .modal-content .modal-body {
+        margin-top: 1.5vw;
+    }
+    .Seccessful {
+        width: 25vw;
+        height: 25vw;
+        margin: 0 auto;
+
+    }
+    .problem {
+        margin: 0 auto;
+        font-family: sahel;
+        font-size:3.5vw;
+        color: #707070;
+        display: table;
+    }
+
+    .modal_SeccessfulMessage .modal-content .modal-header .close-image {
+        display: block;
+        margin: 0 auto;
+    }
+    /*** Delete Documents***/
+    .modal_DeleteDocuments .modal-content {
+        border: 0;
+        background-color: #E3E3E3;
+        border-radius: 5vw;
+        margin: 35% auto;
+        width: 65vw;
+        height: 50vw;
+        position: relative;
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+        -o-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+
+    }
+    .modal_DeleteDocuments .modal-content .modal-header {
+        background-color: #E3E3E3;
+        height: 3vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        padding: 2vw;
+    }
+
+    .modal_DeleteDocuments .modal-content .modal-body {
+        margin-top: 1.5vw;
+    }
+    .Delete {
+        width: 25vw;
+        height: 25vw;
+        margin: 0 auto;
+
+    }
+    .delete {
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal_DeleteDocuments .modal-content .modal-header .close_button{
+        width: 8vw;
+        height: 8vw;
+        top: -3.5vw;
+    }
+    .modal_DeleteDocuments .modal-content .modal-header .close-image {
+        display: block;
+        margin: 0 auto;
+    }
+    .modal_DeleteDocuments .modal-content .modal-footer{
+        padding: 1vw;
+    }
+
+    .confirmation {
+        font-size: 3.3vw;
+        margin: 3vw 28%;
+        width: 28vw;
+        padding: 1vw 3vw;
+    }
+
+
+}
